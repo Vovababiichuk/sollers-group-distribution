@@ -7,15 +7,15 @@ function App() {
 
   return (
     <div className="wrapper">
-      <div className='header'>
+      <header className='header'>
         <Header />
-      </div>
-      <div className='main'>
+      </header>
+      <main className='main'>
         <Main />
-      </div>
-      <div className='footer'>
+      </main>
+      <footer className='footer'>
         <Footer />
-      </div>
+      </footer>
     </div>
   )
 }

@@ -1,11 +1,14 @@
-import styles from './Main.module.scss'
+import { Hero } from '../Hero/Hero'
 
 export const Main = () => {
 	return (
-		<div className={styles.container}>
-			<div>
-				Main
-			</div>
-		</div>
+		<>
+			<section>
+				<Hero />
+			</section>
+			<section>
+
+			</section>
+		</>
 	)
 }
