@@ -1,3 +1,11 @@
+.hue-rotate-100 {
+  filter: hue-rotate(100deg);
+}
+
 .container {
-  @apply max-w-screen-xl mx-auto px-4
+  @apply max-w-screen-xl mx-auto px-4;
+}
+
+.video {
+  @apply w-full h-full object-cover bg-cover bg-opacity-50 hue-rotate-100;
 }

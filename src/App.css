@@ -9,6 +9,12 @@ body {
   flex-direction: column;
 }
 
+/* .header {
+  position: fixed;
+  left: 0;
+  right: 0;
+} */
+
 .main {
   flex-grow: 1;
 }

@@ -4,6 +4,9 @@
 
 :root {
   font-family: 'Encode Sans', sans-serif, Avenir, Helvetica, Arial, sans-serif;
+  color: black;
+  font-size: 16px;
+  background-color: white;
 }
 
 #root {

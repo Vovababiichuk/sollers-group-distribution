@@ -5,8 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [],
+    screens: {
+      'sm': '576px',
+      'md': '768px',
+      'lg': '992px',
+      'xl': '1200px',
+      '2xl': '1400px',
+    },
+    extend: {
+      colors: {
+        'color_black-section': '#010606',
+        'primary': '#0683c9',
+      },
+    },
+    plugins: [],
+  }
 }
-
