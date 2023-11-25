@@ -7,5 +7,26 @@
 }
 
 .video {
-  @apply w-full h-full object-cover bg-cover bg-opacity-50 hue-rotate-100;
+  @apply w-full h-full object-cover bg-cover bg-opacity-50 hue-rotate-100 opacity-40;
 }
+
+.relativeContainer {
+  @apply relative h-full;
+}
+
+.centeredContent {
+  @apply absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center whitespace-nowrap;
+}
+
+.title {
+	@apply text-6xl font-bold
+}
+
+.text {
+	@apply p-6 text-2xl
+}
+
+.logoHero {
+	@apply w-96 m-auto
+}
+

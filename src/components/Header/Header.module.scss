@@ -2,5 +2,12 @@
   @apply max-w-screen-xl mx-auto px-4
 }
 .logo {
-  @apply block w-16
+  @apply w-16
 }
+
+.phone {
+  @apply flex items-center gap-2 cursor-pointer hover:scale-105 duration-300 transition ease-in-out
+}
+
+
+
