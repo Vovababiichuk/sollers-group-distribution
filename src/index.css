@@ -5,3 +5,8 @@
 :root {
   font-family: 'Encode Sans', sans-serif, Avenir, Helvetica, Arial, sans-serif;
 }
+
+#root {
+  height: 100%;
+}
+

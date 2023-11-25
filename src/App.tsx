@@ -1,10 +1,21 @@
 import './App.css'
+import { Footer } from './components/Footer/Footer'
+import { Header } from './components/Header/Header'
+import { Main } from './components/Main/Main'
 
 function App() {
 
   return (
-    <div>
-      <h1>Hello Vite</h1>
+    <div className="wrapper">
+      <div className='header'>
+        <Header />
+      </div>
+      <div className='main'>
+        <Main />
+      </div>
+      <div className='footer'>
+        <Footer />
+      </div>
     </div>
   )
 }
