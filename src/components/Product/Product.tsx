@@ -1,6 +1,6 @@
 import { ShieldCheck } from 'lucide-react';
 import { Button } from '../Button/Button';
-import style from './About.module.scss';
+import style from './Product.module.scss';
 import { useState } from 'react';
 import Modal from 'react-modal';
 
@@ -21,7 +21,7 @@ const customStyles = {
   },
 };
 
-export const About: React.FC = () => {
+export const Product: React.FC = () => {
   let subtitle: HTMLElement | null;
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -43,15 +43,18 @@ export const About: React.FC = () => {
   }
 
   return (
-    <div id="about" className="text-black py-48">
+    <div id="product" className="text-white py-48 bg-color_black-section">
       <div className={style.container}>
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-20">
+        <div>
+            <img src="/images/secure_login.svg" alt="logo" width={'1000px'} />
+          </div>
           <div className="flex flex-col gap-5 w-full max-w-xl">
             <span className="text-primary font-bold uppercase">
               Premium Cyber Security Solutions
             </span>
             <h2 className="text-5xl font-bold">Ultimate Protection for Your Online World</h2>
-            <p className="text-black">
+            <p className="text-white">
 							We offer state-of-the-art cyber security solutions to protect your online.
 							Our products are designed to meet the evolving needs of the digital.
 							Benefit from our state-of-the-art technology.
@@ -61,7 +64,7 @@ export const About: React.FC = () => {
 							Your online world is protected with us.
             </p>
             <div onClick={openModal} className="pt-4">
-              <Button name="Learn More" blackBtn={true} />
+              <Button name="Learn More" blackBtn={false} />
             </div>
             <Modal
               isOpen={modalIsOpen}
@@ -120,9 +123,6 @@ export const About: React.FC = () => {
               </div>
               <button className='bg-[#3f3d56] py-1 px-6 rounded-full text-white hover:scale-110 duration-300 ease-in-out mt-4' onClick={closeModal}>Close</button>
             </Modal>
-          </div>
-          <div>
-            <img src="/images/office.svg" alt="logo" width={'1000px'} />
           </div>
         </div>
       </div>

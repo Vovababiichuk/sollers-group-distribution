@@ -20,7 +20,7 @@ export const Hero = () => {
 						<img className={styles.logoHero} src={logo} alt="logo" />
             <h1 className={styles.title}>Your <span className='text-primary'>Security</span> is Our Priority!</h1>
             <p className={styles.text}>Effective Cyber Security Solutions to Protect Your Online World</p>
-						<Button name='Our Products' blackBtn={false} />
+						<Button name='Our Product' blackBtn={false} />
           </div>
         </div>
       {/* </div> */}
