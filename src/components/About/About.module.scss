@@ -1,3 +1,9 @@
 .container {
   @apply max-w-screen-xl mx-auto px-4
 }
+
+.titleAbout {
+	@apply text-5xl font-bold text-primary absolute left-1/2 -translate-x-1/2 top-10;
+
+	font-family: 'Alex Brush', cursive;
+}

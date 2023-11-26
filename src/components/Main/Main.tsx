@@ -1,7 +1,7 @@
 import { About } from '../About/About'
 import { Hero } from '../Hero/Hero'
 import { Product } from '../Product/Product'
-
+import { Services } from '../Services/Services'
 export const Main = () => {
 	return (
 		<>
@@ -13,6 +13,9 @@ export const Main = () => {
 			</section>
 			<section>
 				<Product />
+			</section>
+			<section>
+				<Services />
 			</section>
 		</>
 	)

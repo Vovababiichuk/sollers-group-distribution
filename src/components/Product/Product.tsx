@@ -43,7 +43,7 @@ export const Product: React.FC = () => {
   }
 
   return (
-    <div id="product" className="text-white py-48 bg-color_black-section">
+    <div id="product" className="text-white h-[800px] pt-48 bg-color_black-section">
       <div className={style.container}>
         <div className="flex items-center gap-20">
         <div>

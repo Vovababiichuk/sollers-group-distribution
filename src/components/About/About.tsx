@@ -43,8 +43,9 @@ export const About: React.FC = () => {
   }
 
   return (
-    <div id="about" className="text-black py-48">
+		<div id="about" className="text-black h-[800px] pt-48 relative">
       <div className={style.container}>
+			{/* <h2 className={style.titleAbout}>About Us</h2> */}
         <div className="flex items-center gap-10">
           <div className="flex flex-col gap-5 w-full max-w-xl">
             <span className="text-primary font-bold uppercase">
