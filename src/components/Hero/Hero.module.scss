@@ -7,23 +7,24 @@
 }
 
 .video {
-  @apply w-full h-full object-cover bg-cover bg-opacity-50 hue-rotate-100 opacity-40 h-screen;
+  @apply absolute top-0 left-0 right-0 w-full h-full object-cover bg-cover bg-opacity-50 hue-rotate-100 opacity-40;
 }
 
 .relativeContainer {
-  @apply relative h-full;
+  @apply relative h-screen w-full z-[1];
 }
 
 .centeredContent {
-  @apply absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center whitespace-nowrap;
+  /* @apply absolute top-[42%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center whitespace-nowrap; */
+  @apply absolute top-[70px] text-center z-[20] left-1/2 transform -translate-x-1/2 whitespace-nowrap;
 }
 
 .title {
-	@apply text-6xl font-bold
+	@apply text-6xl font-bold pt-4
 }
 
 .text {
-	@apply p-6 text-2xl
+	@apply p-6 text-2xl mb-6
 }
 
 .logoHero {

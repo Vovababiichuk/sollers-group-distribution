@@ -7,12 +7,12 @@ const links = [
 		name: 'About'
 	},
 	{
-		path: 'services',
-		name: 'Services'
+		path: 'products',
+		name: 'Products'
 	},
 	{
-		path: 'projects',
-		name: 'Projects'
+		path: 'services',
+		name: 'Services'
 	},
 	{
 		path: 'contact',
