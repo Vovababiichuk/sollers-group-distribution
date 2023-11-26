@@ -8,7 +8,9 @@ export const Header = () => {
     <div className="w-full bg-black text-white h-16 z-50">
       <div className={styles.container}>
         <div className="flex items-center justify-between">
-          <img className={styles.logo} src={logo} alt="logo" />
+          <a href="#top">
+            <img className={styles.logo} src={logo} alt="logo" />
+          </a>
           <Nav />
           <div className="flex items-center gap-10">
             <div className="flex items-center gap-2">
