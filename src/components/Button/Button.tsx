@@ -4,9 +4,10 @@ import styles from "./Button.module.scss";
 
 interface ButtonProps {
   name: string;
+	blackBtn: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({ name }) => {
+export const Button: React.FC<ButtonProps> = ({ name, blackBtn }) => {
 	const [hover, setHover] = useState(false);
 
 	const handleHover = () => {
@@ -17,7 +18,7 @@ export const Button: React.FC<ButtonProps> = ({ name }) => {
     <button
 		onMouseEnter={handleHover}
 		onMouseLeave={handleHover}
-		className={styles.button}>
+		className={blackBtn ? styles.blackBtn : styles.blueBtn}>
       <span>
 				{name}
 			</span>

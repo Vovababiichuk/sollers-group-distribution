@@ -15,6 +15,7 @@ export default {
     extend: {
       colors: {
         'color_black-section': '#010606',
+        'color_black-section2': '#0f1523',
         'primary': '#0683c9',
       },
     },
