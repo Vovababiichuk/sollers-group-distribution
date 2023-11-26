@@ -1,3 +1,4 @@
+import { About } from '../About/About'
 import { Hero } from '../Hero/Hero'
 
 export const Main = () => {
@@ -7,7 +8,7 @@ export const Main = () => {
 				<Hero />
 			</section>
 			<section>
-
+				<About />
 			</section>
 		</>
 	)

@@ -9,13 +9,13 @@ body {
   flex-direction: column;
 }
 
-/* .header {
-  content: '';
-  position: absolute;
-  top: 0;
+.header {
+  position: fixed;
   left: 0;
   right: 0;
-} */
+  background: black;
+  z-index: 100;
+}
 
 .main {
   flex-grow: 1;

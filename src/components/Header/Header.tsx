@@ -5,7 +5,7 @@ import logo from '/images/logo/logo.png';
 
 export const Header = () => {
   return (
-    <div className="w-full bg-black text-white">
+    <div className="w-full bg-black text-white h-16 z-50">
       <div className={styles.container}>
         <div className="flex items-center justify-between">
           <img className={styles.logo} src={logo} alt="logo" />

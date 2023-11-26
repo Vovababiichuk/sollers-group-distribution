@@ -7,7 +7,7 @@
 }
 
 .video {
-  @apply w-full h-full object-cover bg-cover bg-opacity-50 hue-rotate-100 opacity-40;
+  @apply w-full h-full object-cover bg-cover bg-opacity-50 hue-rotate-100 opacity-40 h-screen;
 }
 
 .relativeContainer {
@@ -15,7 +15,7 @@
 }
 
 .centeredContent {
-  @apply absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center whitespace-nowrap;
+  @apply absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center whitespace-nowrap;
 }
 
 .title {
@@ -27,6 +27,6 @@
 }
 
 .logoHero {
-	@apply w-96 m-auto
+	@apply w-96 m-auto hidden sm:block
 }
 

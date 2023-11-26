@@ -28,22 +28,23 @@ export const Nav = () => {
 	return (
 		<nav>
 			<ul className='flex gap-10'>
-				{links.map((link => {
+				{links.map((link, index) => {
 					return (
 						<li key={link.path}>
 							<Link
-								activeClass="active"
 								to={link.path}
-								spy={true}
-								smooth={true}
-								offset={-70}
-								duration={500}
+								className='cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300'
+								activeClass='active'
+								key={index}
+								smooth
+								spy
+								offset={-50}
 							>
 								{link.name}
 							</Link>
 						</li>
 					)
-				}))}
+				})}
 			</ul>
 		</nav>
 	)
