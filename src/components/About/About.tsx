@@ -75,7 +75,7 @@ export const About: React.FC = () => {
               </h2> */}
               <div className="w-[900px] flex items-center gap-10 z-[1000]">
                 <div>
-                  <div className="bg-primary uppercase text-center text-white mb-4 flex items-center gap-2 justify-center">
+                  <div className="bg-primary uppercase text-center text-white mb-4 flex items-center gap-2 justify-start">
                     <span>
                       <ShieldCheck className="m-auto p-1" color="white" size={40} />
                     </span>
@@ -88,7 +88,7 @@ export const About: React.FC = () => {
                     intelligent threat detection systems, our products are tailored to meet the
                     evolving challenges of the digital landscape.
                   </p>
-                  <div className="bg-primary uppercase text-center text-white mb-4 flex items-center gap-2 justify-center">
+                  <div className="bg-primary uppercase text-white mb-4 flex items-center gap-2 justify-start">
                     <span>
                       <ShieldCheck className="m-auto p-1" color="white" size={40} />
                     </span>
@@ -101,7 +101,7 @@ export const About: React.FC = () => {
                     you're an individual user or managing a complex network, our range of products
                     offers scalable solutions to suit your specific needs.
                   </p>
-                  <div className="bg-primary uppercase text-center text-white mb-4 flex items-center gap-2 justify-center">
+                  <div className="bg-primary uppercase text-center text-white mb-4 flex items-center gap-2 justify-start">
                     <span>
                       <ShieldCheck className="m-auto p-1" color="white" size={40} />
                     </span>
@@ -115,7 +115,7 @@ export const About: React.FC = () => {
                   </p>
                 </div>
                 <div>
-                  <img src="/images/undraw_certificate.svg" alt="logo" width={'1200px'} />
+                  <img src="/images/undraw_certificate.svg" alt="logo" width={'1500px'} />
                 </div>
               </div>
               <button className='bg-[#3f3d56] py-1 px-6 rounded-full text-white hover:scale-110 duration-300 ease-in-out mt-4' onClick={closeModal}>Close</button>
