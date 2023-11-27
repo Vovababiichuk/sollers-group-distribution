@@ -14,33 +14,51 @@ interface CardProps {
 const cardData: CardProps[] = [
   {
     id: 1,
-    title: 'Card 1',
-    description: 'Description 1',
-    image: '/images/office.svg',
+    title: 'Title 1',
+    description: 'We provide the best security services. We offer state-of-the-art security solutions to protect your online.',
+    image: '/images/cards-img/12.svg',
   },
   {
     id: 2,
-    title: 'Card 2',
+    title: 'Title 2',
     description: 'Description 2',
-    image: '/images/office.svg',
+    image: '/images/cards-img/3.svg',
   },
   {
     id: 3,
-    title: 'Card 3',
+    title: 'Title 3',
     description: 'Description 3',
-    image: '/images/office.svg',
+    image: '/images/cards-img/25.svg',
   },
   {
     id: 4,
-    title: 'Card 4',
+    title: 'Title 4',
     description: 'Description 4',
-    image: '/images/office.svg',
+    image: '/images/cards-img/5.svg',
   },
   {
     id: 5,
-    title: 'Card 5',
+    title: 'Title 5',
     description: 'Description 5',
-    image: '/images/office.svg',
+    image: '/images/cards-img/1.svg',
+  },
+  {
+    id: 6,
+    title: 'Title 6',
+    description: 'Description 6',
+    image: '/images/cards-img/21.svg',
+  },
+  {
+    id: 7,
+    title: 'Title 7',
+    description: 'Description 7',
+    image: '/images/cards-img/26.svg',
+  },
+  {
+    id: 8,
+    title: 'Title 8',
+    description: 'Description 8',
+    image: '/images/cards-img/24.svg',
   },
 ];
 
@@ -48,7 +66,7 @@ export const SliderSwiper = () => {
 	const settings = {
 		dots: true,
 		infinite: false,
-		speed: 500,
+		speed: 700,
 		slidesToShow: 4,
 		slidesToScroll: 4,
 		initialSlide: 0,
@@ -85,10 +103,10 @@ export const SliderSwiper = () => {
         <Slider {...settings}>
           {cardData.map((card) => {
             return (
-              <div key={card.id}>
-                <div>
-                  <img src={card.image} alt="images" width={200} />
-                  <h2>{card.title}</h2>
+              <div key={card.id} className='border-[6px] border-white rounded-[14px] h-[400px] bg-primary text-white px-4'>
+                <div className='flex flex-col gap-4 justify-center items-center py-8 overflow-hidden '>
+                  <div className='h-[180px] rounded-[6px] mt-[-10px] bg-white p-6'><img src={card.image} alt="images" width={200} /></div>
+                  <h2 className='font-bold text-[#3f3d56]'>{card.title}</h2>
                   <p>{card.description}</p>
                 </div>
               </div>

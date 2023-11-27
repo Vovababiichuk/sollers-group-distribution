@@ -3,6 +3,7 @@ import { Button } from '../Button/Button';
 import style from './About.module.scss';
 import { useState } from 'react';
 import Modal from 'react-modal';
+import styles from './About.module.scss';
 
 const customStyles = {
   content: {
@@ -12,7 +13,7 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-		zIndex: 1000,
+    zIndex: 1000,
     // backgroundColor: '#1a1a1a',
     // color: 'white',
   },
@@ -27,7 +28,7 @@ export const About: React.FC = () => {
 
   function openModal() {
     setIsOpen(true);
-		document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
   }
 
   function afterOpenModal() {
@@ -39,27 +40,27 @@ export const About: React.FC = () => {
 
   function closeModal() {
     setIsOpen(false);
-		document.body.style.overflow = 'auto';
+    document.body.style.overflow = 'auto';
   }
 
   return (
-		<div id="about" className="text-black h-[800px] pt-48 relative">
+    <div id="about" className="text-black h-[800px] pt-48 relative">
       <div className={style.container}>
-			{/* <h2 className={style.titleAbout}>About Us</h2> */}
+        <div className='flex items-center justify-center'>
+          <h2 className={styles.titleAbout}>About Us</h2>
+        </div>
         <div className="flex items-center gap-10">
           <div className="flex flex-col gap-5 w-full max-w-xl">
             <span className="text-primary font-bold uppercase">
               Premium Cyber Security Solutions
             </span>
-            <h2 className="text-5xl font-bold">Ultimate Protection for Your Online World</h2>
+            <h2 className="text-4xl font-bold">Ultimate Protection for Your Online World</h2>
             <p className="text-black">
-							We offer state-of-the-art cyber security solutions to protect your online.
-							Our products are designed to meet the evolving needs of the digital.
-							Benefit from our state-of-the-art technology.
-							Our advanced technologies are designed to safeguard your digital assets.
-							Your data is safe with us.
-							Computers are secure with us.
-							Your online world is protected with us.
+              We offer state-of-the-art cyber security solutions to protect your online. Our
+              products are designed to meet the evolving needs of the digital. Benefit from our
+              state-of-the-art technology. Our advanced technologies are designed to safeguard your
+              digital assets. Your data is safe with us. Computers are secure with us. Your online
+              world is protected with us.
             </p>
             <div onClick={openModal} className="pt-4">
               <Button name="Learn More" blackBtn={true} />
@@ -119,7 +120,11 @@ export const About: React.FC = () => {
                   <img src="/images/undraw_certificate.svg" alt="logo" width={'1500px'} />
                 </div>
               </div>
-              <button className='bg-[#3f3d56] py-1 px-6 rounded-full text-white hover:scale-110 duration-300 ease-in-out mt-4' onClick={closeModal}>Close</button>
+              <button
+                className="bg-[#3f3d56] py-1 px-6 rounded-full text-white hover:scale-110 duration-300 ease-in-out mt-4"
+                onClick={closeModal}>
+                Close
+              </button>
             </Modal>
           </div>
           <div>
