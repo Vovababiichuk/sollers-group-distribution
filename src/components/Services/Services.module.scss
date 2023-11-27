@@ -1,9 +1,9 @@
 .titleServices {
-	@apply text-5xl font-bold text-black text-center mb-24 mt-[-60px];
+	@apply text-5xl font-bold text-black text-center mb-[80px] mt-[-60px];
 
 	&::after {
 		content: '';
-		background-image: url('/images/decor.svg');
+		background-image: url('/images/decor2.svg');
 		background-repeat: no-repeat;
 		width: 190px;
 		height: 45px;

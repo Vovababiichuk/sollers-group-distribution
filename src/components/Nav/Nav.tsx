@@ -9,7 +9,7 @@ const links = [
 	},
 	{
 		path: 'product',
-		name: 'Product',
+		name: 'Products',
 		offset: -50
 	},
 	{
@@ -19,7 +19,7 @@ const links = [
 	},
 	{
 		path: 'whywe',
-		name: 'Why We',
+		name: 'Why Us',
 		offset: -50
 	},
 	{
@@ -32,7 +32,7 @@ const links = [
 export const Nav = () => {
 	return (
 		<nav>
-			<ul className='flex gap-10'>
+			<ul className='flex gap-10 uppercase'>
 				{links.map((link => {
 					return (
 						<li key={link.path}>

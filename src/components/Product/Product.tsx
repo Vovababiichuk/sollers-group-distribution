@@ -47,7 +47,7 @@ export const Product: React.FC = () => {
     <div id="product" className="text-white h-[800px] pt-48 bg-color_black-section2">
       <div className={style.container}>
         <div className="flex items-center justify-center mb-[10px]">
-          <h2 className={styles.titleProduct}>Our Product</h2>
+          <h2 className={styles.titleProduct}>Our Products</h2>
         </div>
         <div className="flex items-center gap-[100px]">
           <div>
