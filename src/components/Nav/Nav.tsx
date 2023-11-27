@@ -18,13 +18,13 @@ const links = [
 		offset: -50
 	},
 	{
-		path: 'contact',
-		name: 'Contact',
+		path: 'whywe',
+		name: 'Why We',
 		offset: -50
 	},
 	{
-		path: 'info',
-		name: 'More',
+		path: 'contact',
+		name: 'Contact',
 		offset: -50
 	}
 ]

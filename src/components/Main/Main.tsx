@@ -2,6 +2,7 @@ import { About } from '../About/About'
 import { Hero } from '../Hero/Hero'
 import { Product } from '../Product/Product'
 import { Services } from '../Services/Services'
+import { WhyWe } from '../WhyWe/WhyWe'
 export const Main = () => {
 	return (
 		<>
@@ -16,6 +17,9 @@ export const Main = () => {
 			</section>
 			<section>
 				<Services />
+			</section>
+			<section>
+				<WhyWe />
 			</section>
 		</>
 	)
