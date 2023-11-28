@@ -6,7 +6,7 @@ interface ButtonProps {
   name: string;
   blackBtn: boolean;
   onClick?: () => void;
-
+  onSubmit?: () => void;
 }
 
 export const ButtonMain: React.FC<ButtonProps> = ({ name, blackBtn, onClick }) => {

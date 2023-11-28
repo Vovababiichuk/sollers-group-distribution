@@ -1,3 +1,8 @@
+import { Input, InputGroup, InputLeftElement, Stack } from '@chakra-ui/react';
+import { Textarea } from '@chakra-ui/react';
+
+// import { useForm, SubmitHandler } from 'react-hook-form';
+
 import styles from './Contacts.module.scss';
 
 import { motion } from 'framer-motion';
@@ -6,22 +11,12 @@ import { fadeIn } from '../../../variants';
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { PhoneIcon } from 'lucide-react';
+import { ButtonMain } from '../ButtonMain/ButtonMain';
 
-export const Contacts: React.FC = () => {
+export const Contacts: React.FC= () => {
+
   const form = useRef<HTMLFormElement>(null);
-
-  // const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY').then(
-  //     (result) => {
-  //       console.log(result.text);
-  //     },
-  //     (error) => {
-  //       console.log(error.text);
-  //     },
-  //   );
-  // };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -68,7 +63,7 @@ export const Contacts: React.FC = () => {
 
               {/* !!!!!!!!!! */}
 
-              <form ref={form} onSubmit={sendEmail}>
+              {/* <form ref={form} onSubmit={sendEmail}>
                 <div>
                   <label>Name</label>
                   <input className='text-black' type="text" name="user_name" />
@@ -90,9 +85,31 @@ export const Contacts: React.FC = () => {
                   <textarea className='text-black' name="message" />
                 </div>
                 <input type="submit" value="Send" />
-              </form>
+              </form> */}
 
               {/* !!!!!! */}
+
+              <form ref={form} onSubmit={sendEmail}>
+                <Stack spacing={3}>
+                  <Input type="text" name="user_name" variant="outline" placeholder="Your Name" />
+                  <Input
+                    type="text"
+                    name="user_position"
+                    variant="outline"
+                    placeholder="Your Position"
+                  />
+                  <InputGroup>
+                    <InputLeftElement pointerEvents="none">
+                      <PhoneIcon color="white" />
+                    </InputLeftElement>
+                    <Input type="tel" name="user_phone" placeholder="Phone number" />
+                  </InputGroup>
+                  <Input type="email" name="user_email" variant="outline" placeholder="Your Mail" />
+                  <Textarea name="message" placeholder="Write your comment here" />
+                  <ButtonMain name="Send" blackBtn={false} />
+                </Stack>
+              </form>
+
             </motion.div>
           </div>
           <motion.div
