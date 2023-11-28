@@ -29,13 +29,15 @@ const cardData: CardProps[] = [
   {
     id: 3,
     title: 'DATA DISCOVERY, CLASSIFICATION, WATERMARK, OCR. In Real-time, Automatically',
-    description: 'OPSWAT Certified. Accurately Discover, Locate, Identify, Classify & Inventory - your critical data including Exchange, PST/OST, NAS, SharePoint, Fileshares, Local Storage, Cloud Storage (Google, BOX, Dropbox, OneDrive ..), including OCR detection. Including Email DLP and ChatGPT! Including Email DLP and ChatGPT!',
+    description:
+      'OPSWAT Certified. Accurately Discover, Locate, Identify, Classify & Inventory - your critical data including Exchange, PST/OST, NAS, SharePoint, Fileshares, Local Storage, Cloud Storage (Google, BOX, Dropbox, OneDrive ..), including OCR detection. Including Email DLP and ChatGPT! Including Email DLP and ChatGPT!',
     image: '/images/cards-img/25.svg',
   },
   {
     id: 4,
     title: 'CONTENT AWARE DIGITAL RIGHTS MANAGEMENT',
-    description: 'Comprehensive access control to sensitive data for internal and external users. The system automatically controls 4 Ws WHO can access the information, WHAT can recipients do with the information, WHEN can each user access the information & WHERE the information can be used. Including Email DLP and ChatGPT!',
+    description:
+      'Comprehensive access control to sensitive data for internal and external users. The system automatically controls 4 Ws WHO can access the information, WHAT can recipients do with the information, WHEN can each user access the information & WHERE the information can be used. Including Email DLP and ChatGPT!',
     image: '/images/cards-img/5.svg',
   },
   // {
@@ -47,19 +49,22 @@ const cardData: CardProps[] = [
   {
     id: 6,
     title: 'CLOUD SECURITY & APPLICATION CONTROL',
-    description: 'Control data from / to a myriad of sources— laptops, database exchanges, all cloud services and infrastructures, such as ChatGPT, AWS, Amazon Cloud, Azure, Box, Dropbox, Evernote, Google Cloud, Google Docs, Google Drive, Office 365, OneDrive, Salesforce, Skype for Business and more to Shadow IT (BYOx). GTB\'s CASB with a Twist. Including Email DLP and ChatGPT!',
+    description:
+      "Control data from / to a myriad of sources— laptops, database exchanges, all cloud services and infrastructures, such as ChatGPT, AWS, Amazon Cloud, Azure, Box, Dropbox, Evernote, Google Cloud, Google Docs, Google Drive, Office 365, OneDrive, Salesforce, Skype for Business and more to Shadow IT (BYOx). GTB's CASB with a Twist. Including Email DLP and ChatGPT!",
     image: '/images/cards-img/21.svg',
   },
   {
     id: 7,
     title: 'FILE & DATABASE AUDITOR',
-    description: 'Control data from a myriad of sources— laptops, database exchanges, all cloud services and infrastructures, such as AWS, Amazon Cloud, Azure, Box, Dropbox, Evernote, Google Cloud, Google Docs, Google Drive, Office 365, OneDrive, Salesforce, Skype for Business and more to Shadow IT (BYOx). GTB\'s CASB with a Twist',
+    description:
+      "Control data from a myriad of sources— laptops, database exchanges, all cloud services and infrastructures, such as AWS, Amazon Cloud, Azure, Box, Dropbox, Evernote, Google Cloud, Google Docs, Google Drive, Office 365, OneDrive, Salesforce, Skype for Business and more to Shadow IT (BYOx). GTB's CASB with a Twist",
     image: '/images/cards-img/26.svg',
   },
   {
     id: 8,
     title: 'Complete data security, in the cloud',
-    description: 'from an Intellectual Property, Compliance, and APT perspective, no one competes! Deployed in minutes Comprehensive Visability Deployed on-premises, SaaS or in the cloud ( AWS, Azure, Google) Deployed as a Cloud image/appliance Behavior & Threat telemetry helps determine risk Bring Zero trust to enterprise data Value delivered immediately using GTB\'s single agent cloud solution MSP and MSSP OEM Kits',
+    description:
+      "from an Intellectual Property, Compliance, and APT perspective, no one competes! Deployed in minutes Comprehensive Visability Deployed on-premises, SaaS or in the cloud ( AWS, Azure, Google) Deployed as a Cloud image/appliance Behavior & Threat telemetry helps determine risk Bring Zero trust to enterprise data Value delivered immediately using GTB's single agent cloud solution MSP and MSSP OEM Kits",
     image: '/images/cards-img/24.svg',
   },
 ];
@@ -160,7 +165,7 @@ export const SliderSwiper = () => {
                   </div>
                 </div>
                 <div className={styles.description}>
-                  <p>{card.description}</p>
+                  <p className="flex items-center gap-2">{card.description}</p>
                 </div>
               </div>
             </div>
