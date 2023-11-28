@@ -6,7 +6,7 @@ import { fadeIn } from '../../../variants'; // Assuming this is a valid import
 
 export const Footer = () => {
   return (
-    <div className={`h-full h-[300px] bg-[#0b0b19] ${styles.footer}`}>
+    <div className={`h-[300px] bg-[#0b0b19] ${styles.footer}`}>
       <div className={styles.container}>
         <div className={styles.grid}>
           {/* Left column */}

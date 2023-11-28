@@ -104,7 +104,7 @@ export const Contacts: React.FC = () => {
                   />
                   <InputGroup>
                     <InputLeftElement pointerEvents="none">
-                      <PhoneIcon color="white" />
+                      <PhoneIcon size={20} color="white" />
                     </InputLeftElement>
                     <Input type="tel" name="user_phone" placeholder="Phone number" />
                   </InputGroup>
@@ -119,7 +119,7 @@ export const Contacts: React.FC = () => {
                     {/* Buttons to trigger toasts */}
                     <Wrap paddingTop={'10px'} margin={'auto'} justify={'center'} color={'black'}>
                       <WrapItem>
-                        <ButtonMain name="Send" blackBtn={true} />
+                        <ButtonMain name="Send" blackBtn={false} />
                       </WrapItem>
                     </Wrap>
                   </motion.div>

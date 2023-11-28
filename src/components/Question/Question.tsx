@@ -38,11 +38,11 @@ export const Question: React.FC = () => {
               </span>
               <h2 className="text-4xl font-bold text-black mb-6">Answers to possible questions</h2>
             <div>
-              <Accordion backgroundColor={'#32b4ff'} color={'white'} fontWeight={'medium'} borderRadius={'10px'}>
+              <Accordion backgroundColor={'#32b4ff'} color={'white'} borderRadius={'10px'}>
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" fontSize={'18px'}>
+                      <Box as="span" flex="1" textAlign="left" fontSize={'18px'} textTransform={'uppercase'}>
                       How is Chakra UI Pro different from Chakra UI?
                       </Box>
                       <AccordionIcon />
@@ -57,7 +57,7 @@ export const Question: React.FC = () => {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" fontSize={'18px'}>
+                      <Box as="span" flex="1" textAlign="left" fontSize={'18px'} textTransform={'uppercase'}>
                       What do I get when I buy a Chakra UI Pro license?
                       </Box>
                       <AccordionIcon />
@@ -72,7 +72,7 @@ export const Question: React.FC = () => {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" fontSize={'18px'}>
+                      <Box as="span" flex="1" textAlign="left" fontSize={'18px'} textTransform={'uppercase'}>
                       Does Chakra UI Pro come with a Figma file or similar?
                       </Box>
                       <AccordionIcon />
@@ -87,7 +87,7 @@ export const Question: React.FC = () => {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" fontSize={'18px'}>
+                      <Box as="span" flex="1" textAlign="left" fontSize={'18px'} textTransform={'uppercase'}>
                       How does the Team license work?
                       </Box>
                       <AccordionIcon />
@@ -102,13 +102,13 @@ export const Question: React.FC = () => {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" fontSize={'18px'}>
+                      <Box as="span" flex="1" textAlign="left" fontSize={'20px'} textTransform={'uppercase'}>
                       How does the Team license work?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
-                  <AccordionPanel pb={4} color={'black'}>
+                  <AccordionPanel pb={4} color={'black'} fontSize={'16px'}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
