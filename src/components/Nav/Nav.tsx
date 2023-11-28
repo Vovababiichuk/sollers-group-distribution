@@ -23,6 +23,11 @@ const links = [
 		offset: -50
 	},
 	{
+		path: 'question',
+		name: 'Q/A',
+		offset: -50
+	},
+	{
 		path: 'contact',
 		name: 'Contact',
 		offset: -50

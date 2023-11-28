@@ -16,7 +16,7 @@ export default {
       colors: {
         'color_black-section': '#010606',
         'color_black-section2': '#0f1523',
-        // 'primary': '#0683c9',
+        // 'primary': '#32b4ff',
         'primary': '#32b4ff',
       },
     },

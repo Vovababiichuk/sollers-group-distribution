@@ -34,7 +34,7 @@ export const Product: React.FC = () => {
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
     if (subtitle) {
-      subtitle.style.color = '#0683c9';
+      subtitle.style.color = '#32b4ff';
     }
   }
 
@@ -50,8 +50,8 @@ export const Product: React.FC = () => {
           <h2 className={styles.titleProduct}>Our Products</h2>
         </div>
         <div className="flex items-center gap-[100px]">
-          <div>
-            <img src="/images/secure_login.svg" alt="logo" width={'1000px'} />
+          <div className='w-[580px]'>
+            <img src="/images/secure_login.svg" alt="logo" />
           </div>
           <div className="flex flex-col gap-5 w-full max-w-xl">
             <span className="text-primary font-bold uppercase">
@@ -76,7 +76,7 @@ export const Product: React.FC = () => {
               contentLabel="Example Modal">
               {/* <h2 className='uppercase' ref={(_subtitle) => (subtitle = _subtitle)}>
                 Subtitle
-                <ShieldCheck color="#0683c9" size={40} />
+                <ShieldCheck color="#32b4ff" size={40} />
               </h2> */}
               <div className="w-[900px] flex items-center gap-10 z-[1000]">
                 <div>

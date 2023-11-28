@@ -14,5 +14,5 @@
 }
 
 .active {
-	@apply border-b-2 border-primary
+	@apply border-b-2 border-primary text-primary
 }

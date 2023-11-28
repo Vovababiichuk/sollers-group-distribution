@@ -2,8 +2,8 @@
   @apply max-w-screen-xl mx-auto px-4
 }
 
-.titleAbout {
-	@apply text-5xl font-bold text-black text-center mb-24 mt-[-110px];
+.titleQuestion {
+	@apply text-5xl font-bold text-black text-center mb-24 mt-[-100px];
 
 	&::after {
 		content: '';

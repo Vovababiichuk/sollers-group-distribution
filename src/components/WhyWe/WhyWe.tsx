@@ -1,9 +1,13 @@
-import { ShieldCheck } from 'lucide-react';
+import { CheckSquare, ShieldCheck } from 'lucide-react';
 // import { Button } from '../Button/Button';
 import { useState } from 'react';
 import Modal from 'react-modal';
 import styles from './WhyWe.module.scss';
 import { BageCounter } from '../BageCounter/BageCounter';
+
+import { motion } from 'framer-motion';
+{/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */}
+import { fadeIn } from '../../../variants';
 
 const customStyles = {
   content: {
@@ -34,7 +38,7 @@ export const WhyWe: React.FC = () => {
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
     if (subtitle) {
-      subtitle.style.color = '#0683c9';
+      subtitle.style.color = '#32b4ff';
     }
   }
 
@@ -44,19 +48,48 @@ export const WhyWe: React.FC = () => {
   }
 
   return (
-    <div id="whywe" className="text-white bg-color_black-section2 h-[800px] pt-48 relative">
+    <div id="whywe" className="text-white bg-color_black-section2 h-[800px] pt-44 relative">
       <div className={styles.container}>
-        <div className='flex items-center justify-center'>
-          <h2 className={styles.titleAbout}>Why Us?</h2>
-        </div>
-        <div className="flex items-center gap-10">
+        <motion.div
+          variants={fadeIn('up', 0.1)}
+          initial="hidden"
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.3 }}>
+          <div className="flex items-center justify-center">
+            <h2 className={styles.titleAbout}>Why Us?</h2>
+          </div>
+        </motion.div>
+        <div className="flex items-center gap-10 mt-[-10px]">
           <div className="flex flex-col gap-5 w-full max-w-xl">
-            <span className="text-primary font-bold uppercase">
-              Premium Cyber Security Solutions
-            </span>
-            <span className="text-2xl font-bold uppercase">Ultimate Protection for Your Online World</span>
-            <span className="text-2xl font-bold uppercase">Ultimate Protection for Your Online World</span>
-            <span className="text-2xl font-bold uppercase">Ultimate Protection for Your Online World</span>
+            <motion.div
+              variants={fadeIn('right', 0.2)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.3 }}>
+              <span className="text-primary font-bold uppercase mb-4 block">
+                Premium Cyber Security Solutions
+              </span>
+              <div className="flex gap-2 items-center">
+                <CheckSquare />
+                <span className="text-[24px] font-bold uppercase mb-2">Support 24/7</span>
+              </div>
+              <div className="flex gap-2 items-center">
+                <CheckSquare />
+                <span className="text-[24px] font-bold uppercase mb-2">
+                  Highest Cyber Security Expertise
+                </span>
+              </div>
+              <div className="flex gap-2 items-center">
+                <CheckSquare />
+                <span className="text-[24px] font-bold uppercase mb-2">Quality Assurance</span>
+              </div>
+              <div className="flex gap-2 items-center">
+                <CheckSquare />
+                <span className="text-[24px] font-bold uppercase">
+                  Accessibility and Compliance
+                </span>
+              </div>
+            </motion.div>
             <BageCounter />
             {/* <div onClick={openModal} className="pt-4">
               <Button name="Learn More" blackBtn={true} />
@@ -69,7 +102,7 @@ export const WhyWe: React.FC = () => {
               contentLabel="Example Modal">
               {/* <h2 className='uppercase' ref={(_subtitle) => (subtitle = _subtitle)}>
                 Subtitle
-                <ShieldCheck color="#0683c9" size={40} />
+                <ShieldCheck color="#32b4ff" size={40} />
               </h2> */}
               <div className="w-[900px] flex items-center gap-10 z-[1000]">
                 <div>
@@ -123,9 +156,16 @@ export const WhyWe: React.FC = () => {
               </button>
             </Modal>
           </div>
-          <div>
-            <img src="/images/pig.svg" alt="logo" width={'1000px'} />
-          </div>
+          <motion.div
+              variants={fadeIn('left', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.3 }}
+              >
+                <div className="w-[500px]">
+                  <img src="/images/pig.svg" alt="logo" />
+                </div>
+              </motion.div>
         </div>
       </div>
     </div>

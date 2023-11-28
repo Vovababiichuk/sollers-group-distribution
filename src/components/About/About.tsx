@@ -1,9 +1,12 @@
-import { ShieldCheck } from 'lucide-react';
+import { CheckSquare, ShieldCheck } from 'lucide-react';
 import { Button } from '../Button/Button';
 import style from './About.module.scss';
 import { useState } from 'react';
 import Modal from 'react-modal';
 import styles from './About.module.scss';
+import { motion } from 'framer-motion';
+{/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */}
+import { fadeIn } from '../../../variants';
 
 const customStyles = {
   content: {
@@ -34,7 +37,7 @@ export const About: React.FC = () => {
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
     if (subtitle) {
-      subtitle.style.color = '#0683c9';
+      subtitle.style.color = '#32b4ff';
     }
   }
 
@@ -44,27 +47,71 @@ export const About: React.FC = () => {
   }
 
   return (
-    <div id="about" className="text-black h-[800px] pt-48 relative">
+    <div id="about" className="text-black bg-[#fFF] h-[800px] pt-44 relative">
       <div className={style.container}>
-        <div className='flex items-center justify-center'>
-          <h2 className={styles.titleAbout}>About Us</h2>
-        </div>
-        <div className="flex items-center gap-10">
+        <motion.div
+          variants={fadeIn('up', 0.2)}
+          initial="hidden"
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.3 }}>
+          <div className="flex items-center justify-center">
+            <h2 className={styles.titleAbout}>About Us</h2>
+          </div>
+        </motion.div>
+        <div className="flex gap-10">
           <div className="flex flex-col gap-5 w-full max-w-xl">
-            <span className="text-primary font-bold uppercase">
-              Premium Cyber Security Solutions
-            </span>
-            <h2 className="text-4xl font-bold">Ultimate Protection for Your Online World</h2>
-            <p className="text-black">
-              We offer state-of-the-art cyber security solutions to protect your online. Our
-              products are designed to meet the evolving needs of the digital. Benefit from our
-              state-of-the-art technology. Our advanced technologies are designed to safeguard your
-              digital assets. Your data is safe with us. Computers are secure with us. Your online
-              world is protected with us.
-            </p>
-            <div onClick={openModal} className="pt-4">
-              <Button name="Learn More" blackBtn={true} />
-            </div>
+            <motion.div
+              variants={fadeIn('up', 0.1)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.3 }}>
+              <span className="text-primary font-bold uppercase mb-4 block">
+                Premium Cyber Security Solutions
+              </span>
+              <h2 className="text-4xl font-bold">Ultimate Protection for Your Online World</h2>
+            </motion.div>
+            <motion.div
+              variants={fadeIn('up', 0.2)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.3 }}>
+              <div className="flex gap-2 items-center">
+                <span>
+                  <CheckSquare />
+                </span>
+                <p className="font-medium">
+                  We offer state-of-the-art cyber security solutions to protect your online. Our
+                  products are designed to meet the evolving needs of the digital.
+                </p>
+              </div>
+              <div className="flex items-center gap-2">
+                <span>
+                  <CheckSquare />
+                </span>
+                <p>
+                  Benefit from our state-of-the-art technology. Our advanced technologies are
+                  designed to safeguard your digital assets.
+                </p>
+              </div>
+              <div className="flex items-center gap-2">
+                <span>
+                  <CheckSquare />
+                </span>
+                <p>
+                  Your data is safe with us. Computers are secure with us. Your online world is
+                  protected with us.
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              variants={fadeIn('up', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.3 }}>
+              <div onClick={openModal} className="pt-4">
+                <Button name="Learn More" blackBtn={true} />
+              </div>
+            </motion.div>
             <Modal
               isOpen={modalIsOpen}
               onAfterOpen={afterOpenModal}
@@ -73,7 +120,7 @@ export const About: React.FC = () => {
               contentLabel="Example Modal">
               {/* <h2 className='uppercase' ref={(_subtitle) => (subtitle = _subtitle)}>
                 Subtitle
-                <ShieldCheck color="#0683c9" size={40} />
+                <ShieldCheck color="#32b4ff" size={40} />
               </h2> */}
               <div className="w-[900px] flex items-center gap-10 z-[1000]">
                 <div>
@@ -127,9 +174,15 @@ export const About: React.FC = () => {
               </button>
             </Modal>
           </div>
-          <div>
-            <img src="/images/office.svg" alt="logo" width={'1000px'} />
-          </div>
+          <motion.div
+            variants={fadeIn('up', 0.3)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}>
+            <div className="w-[580px]">
+              <img src="/images/office.svg" alt="logo" width={'1000px'} />
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>
