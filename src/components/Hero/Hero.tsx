@@ -1,10 +1,11 @@
 import styles from './Hero.module.scss';
 import videoMp4 from '/videos/video.mp4';
 import logo from '/images/logo/logo-blue.svg';
-import { Button } from '../Button/Button';
+import { ButtonMain } from '../ButtonMain/ButtonMain';
 import { motion } from 'framer-motion';
 {/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */}
 import { fadeIn } from '../../../variants';
+import { Link } from 'react-scroll';
 
 export const Hero = () => {
   return (
@@ -43,7 +44,15 @@ export const Hero = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
-            <Button name="Our Product" blackBtn={false} />
+            <Link
+              to={'contact'}
+              className="cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300"
+              activeClass="active"
+              smooth
+              spy
+              offset={-50}>
+              <ButtonMain name="Contact Us" blackBtn={false} />
+            </Link>
           </motion.div>
         </div>
       </div>

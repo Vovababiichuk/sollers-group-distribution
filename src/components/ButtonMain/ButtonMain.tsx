@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { ArrowRight, ChevronRight } from 'lucide-react';
-import styles from './Button.module.scss';
+import styles from './ButtonMain.module.scss';
 
 interface ButtonProps {
   name: string;
   blackBtn: boolean;
+  onClick?: () => void;
+
 }
 
-export const Button: React.FC<ButtonProps> = ({ name, blackBtn }) => {
+export const ButtonMain: React.FC<ButtonProps> = ({ name, blackBtn, onClick }) => {
   const [hover, setHover] = useState(false);
 
   const handleHover = () => {
@@ -16,6 +18,7 @@ export const Button: React.FC<ButtonProps> = ({ name, blackBtn }) => {
 
   return (
     <button
+      onClick={onClick}
       onMouseEnter={handleHover}
       onMouseLeave={handleHover}
       className={blackBtn ? styles.blackBtn : styles.blueBtn}>

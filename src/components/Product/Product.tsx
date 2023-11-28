@@ -1,5 +1,5 @@
 import { ShieldCheck } from 'lucide-react';
-import { Button } from '../Button/Button';
+import { ButtonMain } from '../ButtonMain/ButtonMain';
 import style from './Product.module.scss';
 import { useState } from 'react';
 import Modal from 'react-modal';
@@ -66,7 +66,7 @@ export const Product: React.FC = () => {
               world is protected with us.
             </p>
             <div onClick={openModal} className="pt-4">
-              <Button name="Learn More" blackBtn={false} />
+              <ButtonMain name="Learn More" blackBtn={false} />
             </div>
             <Modal
               isOpen={modalIsOpen}

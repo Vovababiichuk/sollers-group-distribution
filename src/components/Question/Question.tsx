@@ -39,7 +39,7 @@ export const Question: React.FC = () => {
                   <h2>
                     <AccordionButton>
                       <Box as="span" flex="1" textAlign="left" fontSize={'20px'}>
-                        Question 1 title
+                      How is Chakra UI Pro different from Chakra UI?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
@@ -54,7 +54,7 @@ export const Question: React.FC = () => {
                   <h2>
                     <AccordionButton>
                       <Box as="span" flex="1" textAlign="left" fontSize={'20px'}>
-                      Question 2 title
+                      What do I get when I buy a Chakra UI Pro license?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
@@ -69,7 +69,7 @@ export const Question: React.FC = () => {
                   <h2>
                     <AccordionButton>
                       <Box as="span" flex="1" textAlign="left" fontSize={'20px'}>
-                      Question 3 title
+                      Does Chakra UI Pro come with a Figma file or similar?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
@@ -84,7 +84,7 @@ export const Question: React.FC = () => {
                   <h2>
                     <AccordionButton>
                       <Box as="span" flex="1" textAlign="left" fontSize={'20px'}>
-                      Question 4 title
+                      How does the Team license work?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
@@ -99,7 +99,7 @@ export const Question: React.FC = () => {
                   <h2>
                     <AccordionButton>
                       <Box as="span" flex="1" textAlign="left" fontSize={'20px'}>
-                      Question 5 title
+                      Do you offer a free trial?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
@@ -110,6 +110,22 @@ export const Question: React.FC = () => {
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </AccordionPanel>
                 </AccordionItem>
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton>
+                      <Box as="span" flex="1" textAlign="left" fontSize={'20px'}>
+                      Do you offer a free trial?
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pb={4}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </AccordionPanel>
+                </AccordionItem>
+
               </Accordion>
             </div>
           </motion.div>
