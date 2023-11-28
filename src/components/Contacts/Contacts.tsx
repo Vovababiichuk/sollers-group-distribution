@@ -1,13 +1,6 @@
 // Import necessary libraries and components
 import React, { useRef } from 'react';
-import {
-  Input,
-  InputGroup,
-  InputLeftElement,
-  Stack,
-  Wrap,
-  WrapItem,
-} from '@chakra-ui/react';
+import { Input, InputGroup, InputLeftElement, Stack, Wrap, WrapItem } from '@chakra-ui/react';
 import { Textarea } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 // @ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints
@@ -95,9 +88,9 @@ export const Contacts: React.FC = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.3 }}>
               <span className="text-primary font-bold uppercase mb-4 block">
-                  Premium Cyber Security Solutions
-                </span>
-                <h2 className="text-3xl mb-8 font-bold">Write to us to get the best!</h2>
+                Premium Cyber Security Solutions
+              </span>
+              <h2 className="text-3xl mb-8 font-bold">Write to us to get the best!</h2>
 
               {/* Form for user input */}
               <form ref={form} onSubmit={sendEmail}>
@@ -118,12 +111,18 @@ export const Contacts: React.FC = () => {
                   <Input type="email" name="user_email" variant="outline" placeholder="Your Mail" />
                   <Textarea name="message" placeholder="Write your comment here" />
 
-                  {/* Buttons to trigger toasts */}
-                  <Wrap margin={'auto'} justify={'center'} color={'black'}>
-                    <WrapItem>
-                      <ButtonMain name="Send" blackBtn={true} />
-                    </WrapItem>
-                  </Wrap>
+                  <motion.div
+                    variants={fadeIn('up', 0.1)}
+                    initial="hidden"
+                    whileInView={'show'}
+                    viewport={{ once: false, amount: 0.3 }}>
+                    {/* Buttons to trigger toasts */}
+                    <Wrap paddingTop={'10px'} margin={'auto'} justify={'center'} color={'black'}>
+                      <WrapItem>
+                        <ButtonMain name="Send" blackBtn={true} />
+                      </WrapItem>
+                    </Wrap>
+                  </motion.div>
                 </Stack>
               </form>
             </motion.div>

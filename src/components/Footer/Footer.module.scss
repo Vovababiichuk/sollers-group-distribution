@@ -3,7 +3,7 @@
 }
 
 .logo {
-  @apply w-52;
+  @apply w-48;
 }
 
 .footer {
@@ -22,5 +22,5 @@
 }
 
 .centerColumn {
-  @apply col-span-1 flex items-center justify-center;
+  @apply col-span-1 flex items-center justify-center relative;
 }

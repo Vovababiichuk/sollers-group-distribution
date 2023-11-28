@@ -14,7 +14,7 @@ import {
 
 export const Question: React.FC = () => {
   return (
-    <div id="question" className="h-[800px] pt-44 relative">
+    <div id="question" className="h-[800px] pt-40 relative">
       <div className={styles.container}>
         <motion.div
           variants={fadeIn('up', 0.1)}
@@ -74,6 +74,21 @@ export const Question: React.FC = () => {
                     <AccordionButton>
                       <Box as="span" flex="1" textAlign="left" fontSize={'18px'}>
                       Does Chakra UI Pro come with a Figma file or similar?
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pb={4} color={'black'}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </AccordionPanel>
+                </AccordionItem>
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton>
+                      <Box as="span" flex="1" textAlign="left" fontSize={'18px'}>
+                      How does the Team license work?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
