@@ -1,0 +1,18 @@
+.container {
+  @apply max-w-screen-xl mx-auto px-4
+}
+
+.titleContacts {
+	@apply text-5xl font-bold text-white text-center mb-24 mt-[-100px];
+
+	&::after {
+		content: '';
+		background-image: url('/images/decor3.svg');
+		background-repeat: no-repeat;
+		width: 190px;
+		height: 45px;
+		display: block;
+		margin-top: -24px;
+		margin-left: 90px;
+	}
+}

@@ -1,4 +1,5 @@
 import { About } from '../About/About'
+import { Contacts } from '../Contacts/Contacts'
 import { Hero } from '../Hero/Hero'
 import { Product } from '../Product/Product'
 import { Question } from '../Question/Question'
@@ -24,6 +25,9 @@ export const Main = () => {
 			</section>
 			<section>
 				<Question />
+			</section>
+			<section>
+				<Contacts />
 			</section>
 		</>
 	)
