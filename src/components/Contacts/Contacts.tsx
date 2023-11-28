@@ -1,11 +1,47 @@
-import { CheckSquare } from 'lucide-react';
 import styles from './Contacts.module.scss';
 
 import { motion } from 'framer-motion';
 {/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */}
 import { fadeIn } from '../../../variants';
 
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 export const Contacts: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  // const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY').then(
+  //     (result) => {
+  //       console.log(result.text);
+  //     },
+  //     (error) => {
+  //       console.log(error.text);
+  //     },
+  //   );
+  // };
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (form.current && form.current instanceof HTMLFormElement) {
+      emailjs
+        .sendForm('service_libgagm', 'template_erdrx1n', form.current, 'SLEgXy96TDHoBfFP9')
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log('Email sent successfully!');
+          },
+          (error) => {
+            console.log(error.text);
+          },
+        );
+    } else {
+      console.error('Посилання на форму є нульовим або не є HTMLFormElement.');
+    }
+  };
 
   return (
     <div id="contact" className="text-white bg-color_black-section2 h-[800px] pt-44 relative">
@@ -29,40 +65,45 @@ export const Contacts: React.FC = () => {
               <span className="text-primary font-bold uppercase mb-4 block">
                 Premium Cyber Security Solutions
               </span>
-              <div className="flex gap-2 items-center">
-                <CheckSquare />
-                <span className="text-[24px] font-bold uppercase mb-2">Support 24/7</span>
-              </div>
-              <div className="flex gap-2 items-center">
-                <CheckSquare />
-                <span className="text-[24px] font-bold uppercase mb-2">
-                  Highest Cyber Security Expertise
-                </span>
-              </div>
-              <div className="flex gap-2 items-center">
-                <CheckSquare />
-                <span className="text-[24px] font-bold uppercase mb-2">Quality Assurance</span>
-              </div>
-              <div className="flex gap-2 items-center">
-                <CheckSquare />
-                <span className="text-[24px] font-bold uppercase">
-                  Accessibility and Compliance
-                </span>
-              </div>
-            </motion.div>
 
-           
+              {/* !!!!!!!!!! */}
+
+              <form ref={form} onSubmit={sendEmail}>
+                <div>
+                  <label>Name</label>
+                  <input className='text-black' type="text" name="user_name" />
+                </div>
+                <div>
+                  <label>Position</label>
+                  <input className='text-black' type="text" name="user_position" />
+                </div>
+                <div>
+                  <label>Phone</label>
+                  <input className='text-black' type="text" name="user_phone" />
+                </div>
+                <div>
+                  <label>Email</label>
+                  <input className='text-black' type="email" name="user_email" />
+                </div>
+                <div>
+                  <label>Message</label>
+                  <textarea className='text-black' name="message" />
+                </div>
+                <input type="submit" value="Send" />
+              </form>
+
+              {/* !!!!!! */}
+            </motion.div>
           </div>
           <motion.div
-              variants={fadeIn('left', 0.3)}
-              initial="hidden"
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.3 }}
-              >
-                <div className="w-[500px]">
-                  <img src="/images/cards-img/51.svg" alt="logo" width={'550px'} />
-                </div>
-              </motion.div>
+            variants={fadeIn('left', 0.3)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}>
+            <div className="w-[500px]">
+              <img src="/images/cards-img/51.svg" alt="logo" width={'550px'} />
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>
