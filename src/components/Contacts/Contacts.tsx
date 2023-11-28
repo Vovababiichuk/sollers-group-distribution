@@ -95,8 +95,17 @@ export const Contacts: React.FC = () => {
               {/* Form for user input */}
               <form ref={form} onSubmit={sendEmail}>
                 <Stack spacing={3}>
-                  <Input type="text" name="user_name" variant="outline" placeholder="Your Name" />
                   <Input
+                    required
+                    type="text"
+                    minLength={3}
+                    name="user_name"
+                    variant="outline"
+                    placeholder="Your Name"
+                  />
+                  <Input
+                    required
+                    minLength={3}
                     type="text"
                     name="user_position"
                     variant="outline"
@@ -106,10 +115,24 @@ export const Contacts: React.FC = () => {
                     <InputLeftElement pointerEvents="none">
                       <PhoneIcon size={20} color="white" />
                     </InputLeftElement>
-                    <Input type="tel" name="user_phone" placeholder="Phone number" />
+                    <Input
+                      required
+                      minLength={10}
+                      type="tel"
+                      inputMode='numeric'
+                      pattern="[0-9]*"
+                      name="user_phone"
+                      placeholder="Phone number"
+                    />
                   </InputGroup>
-                  <Input type="email" name="user_email" variant="outline" placeholder="Your Mail" />
-                  <Textarea name="message" placeholder="Write your comment here" />
+                  <Input
+                    required
+                    type="email"
+                    name="user_email"
+                    variant="outline"
+                    placeholder="Your Mail"
+                  />
+                  <Textarea required name="message" placeholder="Write your comment here" />
 
                   <motion.div
                     variants={fadeIn('up', 0.1)}
