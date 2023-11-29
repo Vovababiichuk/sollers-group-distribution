@@ -8,12 +8,12 @@ export const Header = () => {
     <div className="w-full bg-[#0b0b19] text-white h-16 z-50">
       <div className={styles.container}>
         <div className="flex items-center justify-between">
-          <a href="#top">
+          <a href="/">
             <img className={styles.logo} src={logo} alt="logo" />
           </a>
           <Nav />
           <div className="flex items-center gap-10">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
               <div className="hover:scale-125 duration-300 transition ease-in-out  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-md">
                 <a href="https://www.linkedin.com/" target="_blank">
                   <Linkedin size={16} />

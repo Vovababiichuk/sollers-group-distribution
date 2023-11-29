@@ -55,7 +55,7 @@ export const Product: React.FC = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
-            <div className="w-[550px]">
+            <div className="w-[500px]">
               <img src="/images/secure_login.svg" alt="logo" />
             </div>
           </motion.div>

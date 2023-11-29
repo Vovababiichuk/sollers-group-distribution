@@ -1,8 +1,10 @@
 import styles from './Footer.module.scss';
-import logo from '/images/logo/logo-footer.svg';
 import { motion } from 'framer-motion';
 // @ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints
 import { fadeIn } from '../../../variants'; // Assuming this is a valid import
+import { Link } from 'react-scroll';
+import logo from '/images/logo/logo-blue.svg';
+import { Linkedin, Instagram } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -16,8 +18,8 @@ export const Footer = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
             <div className={styles.column}>
-              <h3 className=" text-gray-500 text-center text-[24px] mb-6">Our Partners</h3>
-              <div className="flex items-center justify-center gap-32 text-gray-500">
+              {/* <h3 className=" text-gray-500 text-center text-[24px] mb-6">Our Partners</h3> */}
+              <div className="flex items-center justify-center gap-20 text-gray-500">
                 <span className="block">
                   <img className="block w-[300px]" src="/images/partners/1.png" alt="" />
                 </span>
@@ -48,11 +50,72 @@ export const Footer = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
             <div className={styles.column}>
-              <h3 className="text-gray-500 text-center text-[24px] mb-6">Our sicials</h3>
-              <div className="flex items-center justify-center gap-32 text-gray-500">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
+              {/* <h3 className="text-gray-500 text-center text-[24px] mb-6">Our sicials</h3> */}
+              <div className="flex items-center justify-center uppercase gap-8 text-white flex-wrap w-full max-w-[300px]">
+                <Link
+                  to={'about'}
+                  className="cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300"
+                  activeClass="active"
+                  smooth
+                  spy>
+                  About
+                </Link>
+                <Link
+                  to={'product'}
+                  className="cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300"
+                  activeClass="active"
+                  smooth
+                  spy>
+                  Products
+                </Link>
+                <Link
+                  to={'services'}
+                  className="cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300"
+                  activeClass="active"
+                  smooth
+                  spy>
+                  Services
+                </Link>
+                <Link
+                  to={'whywe'}
+                  className="cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300"
+                  activeClass="active"
+                  smooth
+                  spy>
+                  Why Us
+                </Link>
+                <Link
+                  to={'question'}
+                  className="cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300"
+                  activeClass="active"
+                  smooth
+                  spy
+                  offset={-50}>
+                  Q/A
+                </Link>
+                {/* <Link
+                to={'contact'}
+								className='cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300'
+								activeClass='active'
+								smooth
+								spy
+                offset={-50}
+                >Contact</Link> */}
+                <span className="hover:text-primary hover:cursor-pointer hover:border-b-2 hover:border-primary">
+                  Contact
+                </span>
+                <div className="flex items-center gap-6">
+                  <div className="hover:scale-125 duration-300 transition ease-in-out  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-md">
+                    <a href="https://www.linkedin.com/" target="_blank">
+                      <Linkedin size={16} />
+                    </a>
+                  </div>
+                  <div className="hover:scale-125 duration-300 transition ease-in-out bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-1 rounded-md">
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <Instagram size={16} />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
