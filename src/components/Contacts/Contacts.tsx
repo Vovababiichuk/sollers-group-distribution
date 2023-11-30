@@ -1,6 +1,6 @@
 // Import necessary libraries and components
 import React, { useRef } from 'react';
-import { Input, Box, Stack, Textarea } from '@chakra-ui/react';
+import { Input, Stack, Textarea } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 // @ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints
 import { fadeIn } from '../../../variants'; // Assuming this is a valid import
@@ -10,6 +10,8 @@ import styles from './Contacts.module.scss';
 // import { ButtonMain } from '../ButtonMain/ButtonMain';
 
 import { useForm } from 'react-hook-form';
+import { MailCheck, MailWarning } from 'lucide-react';
+import { ButtonMain } from '../ButtonMain/ButtonMain';
 
 interface FormData {
   name: string;
@@ -32,6 +34,9 @@ const REG_EX = {
 };
 
 export const Contacts: React.FC = () => {
+  const [isSuccess, setIsSuccess] = React.useState(false);
+  const [isError, setIsError] = React.useState(false);
+
   const {
     register,
     handleSubmit,
@@ -50,21 +55,25 @@ export const Contacts: React.FC = () => {
           'service_libgagm',
           'template_erdrx1n',
           form.current,
-          'SLEgXy96TDHoBfFP9'
+          'SLEgXy96TDHoBfFP9',
         );
-    
+
         console.log(result.text);
         console.log('Email відправлено успішно!');
+        setIsSuccess(true);
+        setIsError(false);
+
         reset();
       }
     } catch (error) {
       console.error('Email не відправлено!');
+      setIsError(true);
+      setIsSuccess(false);
     }
   };
-  
 
   return (
-    <div id="contact" className="text-white bg-color_black-section2 h-[800px] pt-40 relative">
+    <div id="contact" className="text-white bg-color_black-section2 h-[820px] pt-40 relative">
       <div className={styles.container}>
         {/* Animation for the title */}
         <motion.div
@@ -91,7 +100,7 @@ export const Contacts: React.FC = () => {
               <h2 className="text-3xl mb-8 font-bold">Write to us to get the best!</h2>
 
               {/* Form */}
-              <form ref={form} onSubmit={handleSubmit(sendEmail)} >
+              <form ref={form} onSubmit={handleSubmit(sendEmail)}>
                 <div className="flex flex-col gap-2">
                   {/* Name */}
                   <div>
@@ -184,7 +193,6 @@ export const Contacts: React.FC = () => {
                   {/* Message */}
                   <div>
                     <Stack spacing={3}>
-                      
                       <Textarea
                         {...register('message', {
                           required: ERRORS_MESSAGE.message,
@@ -204,35 +212,27 @@ export const Contacts: React.FC = () => {
                   </div>
                   {/* Button */}
                   <div className="m-auto">
-                    <Box
-                      type="submit"
-                      as="button"
-                      margin={'10px 0'}
-                      height="32px"
-                      lineHeight="1.2"
-                      transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
-                      border="1px"
-                      px="18px"
-                      borderRadius="6px"
-                      fontSize="14px"
-                      fontWeight="semibold"
-                      bg="#ea4e85"
-                      borderColor="#ea4e85"
-                      color="#fff"
-                      _hover={{ bg: '#ff8eb5' }}
-                      _active={{
-                        bg: '#ff8eb5',
-                        transform: 'scale(0.98)',
-                        borderColor: '#ff8eb5',
-                      }}
-                      _focus={{
-                        boxShadow:
-                          '0 0 1px 2px rgba(255, 88, 130, 0.75), 0 1px 1px rgba(0, 0, 0, .15)',
-                      }}>
-                      Send
-                    </Box>
+                    <ButtonMain name="Send Message" blackBtn />
                   </div>
-                  <div></div>
+                  {/* Success or error */}
+                  <div className="text-center">
+                    {isSuccess && (
+                      <div className="flex items-center justify-center gap-2 bg-green-600 mt-4 py-1 px-2 max-w-max rounded uppercase font-medium text-[15px] m-auto">
+                        <span>
+                          <MailCheck />
+                        </span>
+                        <span>Your message was sent successfully!</span>
+                      </div>
+                    )}
+                    {isError && (
+                      <div className="flex items-center justify-center gap-2 bg-red-600 mt-2 py-1 px-2 max-w-max rounded uppercase font-medium text-[15px] m-auto">
+                        <span>
+                          <MailWarning />
+                        </span>
+                        <span>Something went wrong!</span>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </form>
             </motion.div>
