@@ -31,6 +31,7 @@ const ERRORS_MESSAGE = {
 
 const REG_EX = {
   email: /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i,
+  phone: /^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/,
 };
 
 export const Contacts: React.FC = () => {
@@ -150,6 +151,10 @@ export const Contacts: React.FC = () => {
                       <Input
                         {...register('phone', {
                           required: ERRORS_MESSAGE.phone,
+                          pattern: {
+                            value: REG_EX.phone,
+                            message: 'Please enter a valid phone number!',
+                          }
                         })}
                         type="text"
                         name="phone"
