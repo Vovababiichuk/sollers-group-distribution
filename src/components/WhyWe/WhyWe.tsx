@@ -20,7 +20,7 @@ export const WhyWe: React.FC = () => {
             <h2 className={styles.titleAbout}>Why Us?</h2>
           </div>
         </motion.div>
-        <div className="flex items-center justify-center gap-10 mt-[-10px]">
+        <div className="flex items-center justify-center gap-16 mt-[-10px]">
           <div className="flex flex-col gap-5 w-full max-w-xl">
             <motion.div
               variants={fadeIn('right', 0.2)}
@@ -63,7 +63,7 @@ export const WhyWe: React.FC = () => {
               >
                 <div className="w-[500px]">
                   {/* <img src="/images/reduce.svg" alt="logo" width={'550px'} /> */}
-                  <img className='transform scale-x-[-1]'  src="/images/pig.svg" alt="logo" width={'550px'} />
+                  <img src="/images/undraw_security_on.svg" alt="logo" width={'550px'} />
                 </div>
               </motion.div>
         </div>
