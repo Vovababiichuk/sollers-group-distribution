@@ -37,6 +37,7 @@ const REG_EX = {
 export const Contacts: React.FC = () => {
   const [isSuccess, setIsSuccess] = React.useState(false);
   const [isError, setIsError] = React.useState(false);
+  const [showMessageTimeout, setShowMessageTimeout] = React.useState<number | null>(null);
 
   const {
     register,
@@ -65,6 +66,12 @@ export const Contacts: React.FC = () => {
         setIsError(false);
 
         reset();
+
+        const timeoutId = window.setTimeout(() => {
+          setIsSuccess(false);
+        }, 10000);
+
+        setShowMessageTimeout(timeoutId);
       }
     } catch (error) {
       console.error('Email не відправлено!');
@@ -72,6 +79,15 @@ export const Contacts: React.FC = () => {
       setIsSuccess(false);
     }
   };
+
+   // Закриваємо таймер при розмонтовуванні компонента або при зміні isSuccess
+   React.useEffect(() => {
+    return () => {
+      if (showMessageTimeout) {
+        clearTimeout(showMessageTimeout);
+      }
+    };
+  }, [isSuccess]);
 
   return (
     <div id="contact" className="text-white bg-color_black-section2 h-[820px] pt-40 relative">

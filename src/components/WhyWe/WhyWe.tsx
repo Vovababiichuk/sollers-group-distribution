@@ -62,7 +62,8 @@ export const WhyWe: React.FC = () => {
               viewport={{ once: false, amount: 0.3 }}
               >
                 <div className="w-[500px]">
-                  <img src="/images/reduce.svg" alt="logo" width={'550px'} />
+                  {/* <img src="/images/reduce.svg" alt="logo" width={'550px'} /> */}
+                  <img className='transform scale-x-[-1]'  src="/images/pig.svg" alt="logo" width={'550px'} />
                 </div>
               </motion.div>
         </div>

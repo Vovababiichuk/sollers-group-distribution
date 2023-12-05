@@ -6,7 +6,7 @@ import { fadeIn } from '../../../variants';
 
 export const Services = () => {
   return (
-    <div id="services" className="h-[800px] flex flex-col items-center justify-center mt-[-40px]">
+    <div id="services" className="h-[800px] flex flex-col items-center justify-center">
       <motion.div
         variants={fadeIn('up', 0.1)}
         initial="hidden"

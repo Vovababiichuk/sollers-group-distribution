@@ -19,9 +19,9 @@ export const Footer = () => {
             viewport={{ once: false, amount: 0.3 }}>
             <div className={styles.column}>
               {/* <h3 className=" text-gray-500 text-center text-[24px] mb-6">Our Partners</h3> */}
-              <div className="flex items-center justify-center gap-20 text-gray-500">
+              <div className="flex items-center justify-center gap-16 text-gray-500">
                 <span className="block">
-                  <img className="block w-[300px]" src="/images/partners/1.png" alt="" />
+                  <img className="block w-[160px]" src="/images/partners/1.png" alt="" />
                 </span>
                 <span>2</span>
                 <span>3</span>
