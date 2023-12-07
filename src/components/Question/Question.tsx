@@ -25,9 +25,9 @@ export const Question: React.FC = () => {
             <h2 className={styles.titleQuestion}>Q/A</h2>
           </div>
         </motion.div>
-        <div className="flex items-center justify-center gap-[100px]">
+        <div className="flex items-center justify-center gap-[100px] mt-[-20px]">
           <motion.div
-          className='w-full max-w-[600px]'
+          className='w-full max-w-[600px] mt-[-30px]'
             variants={fadeIn('right', 0.3)}
             initial="hidden"
             whileInView={'show'}
@@ -124,7 +124,8 @@ export const Question: React.FC = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
             <div className="w-[500px]">
-              <img src="/images/questions.svg" alt="logo" />
+              {/* <img src="/images/questions.svg" alt="logo" /> */}
+              <img src="/images/3d-img/faq.svg" alt="logo" />
             </div>
           </motion.div>
         </div>

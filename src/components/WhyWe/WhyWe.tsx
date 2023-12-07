@@ -61,9 +61,9 @@ export const WhyWe: React.FC = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.3 }}
               >
-                <div className="w-[500px]">
+                <div className="w-[470px] mt-[-30px]">
                   {/* <img src="/images/reduce.svg" alt="logo" width={'550px'} /> */}
-                  <img src="/images/undraw_security_on.svg" alt="logo" width={'550px'} />
+                  <img src="/images/3d-img/Endpoint-bro.svg" alt="logo" width={'550px'} />
                 </div>
               </motion.div>
         </div>

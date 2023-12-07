@@ -49,14 +49,16 @@ export const Product: React.FC = () => {
           </div>
         </motion.div>
 
-        <div className="flex items-center gap-[100px]">
+        <div className="flex items-center gap-[100px] mt-[-30px]">
           <motion.div
             variants={fadeIn('right', 0.2)}
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
-            <div className="w-[500px]">
-              <img src="/images/secure_login.svg" alt="logo" />
+            <div className="w-[500px] mt-[-20px]">
+              {/* <img src="/images/secure_login.svg" alt="logo" /> */}
+              {/* <img src="/images/3d-img/secure-data-bro.svg" alt="logo" /> */}
+              <img src="/images/3d-img/cyber-attack.svg" alt="logo" />
             </div>
           </motion.div>
           <motion.div
@@ -73,9 +75,9 @@ export const Product: React.FC = () => {
               <TabPanels>
                 <TabPanel>
                   <div className="flex flex-col gap-5 w-full max-w-xl">
-                    <span className="text-primary font-bold uppercase">
+                    {/* <span className="text-primary font-bold uppercase">
                       Premium Cyber Security Solutions
-                    </span>
+                    </span> */}
                     <h2 className="text-4xl font-bold">
                       We care about protecting your confidential data
                     </h2>
@@ -135,9 +137,9 @@ export const Product: React.FC = () => {
                 </TabPanel>
                 <TabPanel>
                   <div className="flex flex-col gap-5 w-full max-w-xl">
-                    <span className="text-primary font-bold uppercase">
+                    {/* <span className="text-primary font-bold uppercase">
                       Premium Cyber Security Solutions
-                    </span>
+                    </span> */}
                     <h2 className="text-4xl font-bold">Our second product is the best one</h2>
                     <p className="text-white h-[120px] overflow-hidden">
                       Benefit from our state-of-the-art technology. Our advanced technologies are designed to
@@ -193,9 +195,9 @@ export const Product: React.FC = () => {
                 </TabPanel>
                 <TabPanel>
                   <div className="flex flex-col gap-5 w-full max-w-xl">
-                    <span className="text-primary font-bold uppercase">
+                    {/* <span className="text-primary font-bold uppercase">
                       Premium Cyber Security Solutions
-                    </span>
+                    </span> */}
                     <h2 className="text-4xl font-bold">Our third product is the best one</h2>
                     <p className="text-white h-[120px] overflow-hidden">
                       Our products are designed to meet the evolving needs of the digital. Benefit from

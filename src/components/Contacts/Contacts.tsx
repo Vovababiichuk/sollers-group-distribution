@@ -266,7 +266,8 @@ export const Contacts: React.FC = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
             <div className="w-[500px]">
-              <img src="/images/cards-img/51.svg" alt="logo" width={'550px'} />
+              {/* <img src="/images/cards-img/51.svg" alt="logo" width={'550px'} /> */}
+              <img src="/images/3d-img/email-amico.svg" alt="logo" width={'550px'} />
             </div>
           </motion.div>
         </div>
