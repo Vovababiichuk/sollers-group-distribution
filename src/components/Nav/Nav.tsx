@@ -42,7 +42,7 @@ const links = [
 export const Nav = () => {
 	return (
 		<nav>
-			<ul className='flex gap-6 uppercase'>
+			<ul className='flex max-my-600:flex-col gap-6 max-my-600:gap-4 max-my-600:text-[22px] uppercase items-center'>
 				{links.map((link => {
 					return (
 						<li key={link.path}>

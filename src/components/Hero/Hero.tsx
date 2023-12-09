@@ -24,7 +24,7 @@ export const Hero = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
-            <img className={styles.logoHero} src={logo} alt="logo" />
+            <img className={`${styles.logoHero} max-my-600:hidden`} src={logo} alt="logo" />
           </motion.div>
           <motion.div
             variants={fadeIn('up', 0.4)}
