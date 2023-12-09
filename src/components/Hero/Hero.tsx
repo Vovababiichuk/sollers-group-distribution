@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 
 export const Hero = () => {
   return (
-    <div id="top" className="bg-color_black-section2 text-white h-full w-full pt-16 z-10">
+    <div id="home" className="bg-color_black-section2 text-white h-full w-full pt-16 z-10">
       {/* <div className={styles.container}> */}
       <div className={styles.relativeContainer}>
         <video

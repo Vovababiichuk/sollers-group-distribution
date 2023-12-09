@@ -3,6 +3,11 @@ import { Link } from 'react-scroll'
 
 const links = [
 	{
+		path: 'home',
+		name: 'Home',
+		offset: -50
+	},
+	{
 		path: 'about',
 		name: 'About',
 		offset: -50
@@ -37,7 +42,7 @@ const links = [
 export const Nav = () => {
 	return (
 		<nav>
-			<ul className='flex gap-10 uppercase'>
+			<ul className='flex gap-6 uppercase'>
 				{links.map((link => {
 					return (
 						<li key={link.path}>

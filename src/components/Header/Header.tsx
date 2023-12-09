@@ -13,15 +13,15 @@ export const Header = () => {
           </a>
           <Nav />
           <div className="flex items-center gap-10">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
               <div className="hover:scale-125 duration-300 transition ease-in-out  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-md">
                 <a href="https://www.linkedin.com/" target="_blank">
-                  <Linkedin size={16} />
+                  <Linkedin size={14} />
                 </a>
               </div>
               <div className="hover:scale-125 duration-300 transition ease-in-out bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-1 rounded-md">
                 <a href="https://www.instagram.com/" target="_blank">
-                  <Instagram size={16} />
+                  <Instagram size={14} />
                 </a>
               </div>
             </div>

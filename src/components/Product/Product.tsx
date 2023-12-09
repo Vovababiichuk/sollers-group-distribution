@@ -58,7 +58,9 @@ export const Product: React.FC = () => {
             <div className="w-[500px] mt-[-20px]">
               {/* <img src="/images/secure_login.svg" alt="logo" /> */}
               {/* <img src="/images/3d-img/secure-data-bro.svg" alt="logo" /> */}
-              <img src="/images/3d-img/cyber-attack.svg" alt="logo" />
+              {/* <img src="/images/3d-img/cyber-attack.svg" alt="logo" /> */}
+              <img src="/images/3d-img/amico.svg" alt="logo" />
+              {/* <img src="/images/3d-img/cuate.svg" alt="logo" /> */}
             </div>
           </motion.div>
           <motion.div
