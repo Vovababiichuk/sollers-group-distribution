@@ -1,6 +1,6 @@
 import { X } from 'lucide-react';
 import { useState } from 'react';
-import { Nav } from '../Nav/Nav';
+import { NavMobileMenu } from '../NavMobileMenu/NavMobileMenu';
 
 export const MenuBtn = () => {
   const [toggle, setToggle] = useState(false);
@@ -8,12 +8,12 @@ export const MenuBtn = () => {
   return (
     <div
       onClick={() => setToggle(!toggle)}
-      className=" group flex flex-col gap-y-2 cursor-pointer group items-end">
+      className="group flex flex-col gap-y-2 cursor-pointer group items-end">
       {toggle ? (
         <>
           <X size={36} className="mt-[-6px] z-30" />
           <div className="fixed bg-[#0b0b19] w-full top-0 left-0 right-0 z-20 bottom-0 transition-all duration-300 pt-[100px]">
-            <Nav />
+            <NavMobileMenu />
           </div>
         </>
       ) : (

@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <div className="w-full bg-[#0b0b19] text-white h-16 max-my-930:h-24 max-my-600:h-16 z-50">
       <div className={styles.container}>
-        <div className="flex max-my-930:flex-col max-my-930:gap-4 items-center justify-between">
+        <div className="relative flex max-my-930:flex-col max-my-930:gap-4 items-center justify-between">
           {/* logo */}
           <a href="/">
             <img className={`${styles.logo} max-my-930:hidden`} src={logo} alt="logo" />
@@ -18,7 +18,7 @@ export const Header = () => {
             <Nav />
           </div>
           {/* MenuBtn */}
-          <div className='absolute right-7 top-5 z-10 hidden max-my-600:block'>
+          <div className='absolute right-7 top-5 right-2 z-10 hidden max-my-600:block'>
             <MenuBtn />
           </div>
           {/* Social */}
