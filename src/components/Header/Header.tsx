@@ -6,21 +6,23 @@ import { MenuBtn } from '../MenuBtn/MenuBtn';
 
 export const Header = () => {
   return (
-    <div className="w-full bg-[#0b0b19] text-white h-16 max-my-930:h-24 z-50">
+    <div className="w-full bg-[#0b0b19] text-white h-16 max-my-930:h-24 max-my-600:h-16 z-50">
       <div className={styles.container}>
-        <div className="flex max-my-930:flex-col max-my-930:gap-4  items-center justify-between">
+        <div className="flex max-my-930:flex-col max-my-930:gap-4 items-center justify-between">
           {/* logo */}
           <a href="/">
             <img className={`${styles.logo} max-my-930:hidden`} src={logo} alt="logo" />
           </a>
           {/* Nav */}
-          <Nav />
+          <div className="max-my-600:hidden">
+            <Nav />
+          </div>
           {/* MenuBtn */}
-          <div className='absolute right-7 top-9 z-10 sm:hidden'>
+          <div className='absolute right-7 top-5 z-10 hidden max-my-600:block'>
             <MenuBtn />
           </div>
           {/* Social */}
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-10 max-my-600:hidden">
             <div className="flex items-center gap-2">
               <div className="hover:scale-125 duration-300 transition ease-in-out  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-md">
                 <a href="https://www.linkedin.com/" target="_blank">
