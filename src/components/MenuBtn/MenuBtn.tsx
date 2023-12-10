@@ -1,7 +1,6 @@
 import { X } from 'lucide-react';
 import { useState } from 'react';
 import { Nav } from '../Nav/Nav';
-import { motion } from 'framer-motion';
 
 export const MenuBtn = () => {
   const [toggle, setToggle] = useState(false);
