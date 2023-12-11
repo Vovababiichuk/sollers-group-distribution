@@ -49,7 +49,7 @@ export const NavMobileMenu = ({ onClose }: { onClose?: () => void }) => {
 
 	return (
 		<nav>
-			<ul className='flex max-my-600:flex-col gap-6 max-my-600:gap-4 max-my-600:text-[22px] uppercase items-center'>
+			<ul className='flex max-my-600:flex-col gap-6 max-my-600:gap-4 max-my-600:text-[28px] uppercase items-center'>
 				{links.map((link => {
 					return (
 						<li key={link.path}>
@@ -58,7 +58,7 @@ export const NavMobileMenu = ({ onClose }: { onClose?: () => void }) => {
 								{/* to={link.path} */}
 								<a
 								href={`#${link.path}`}
-								className='cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300 text-primary'
+								className='cursor-pointer border-b-2 border-transparent hover:border-white hover:text-white transition ease-in-out duration-300 text-primary'
 								// activeClass='active'
 								// smooth
 								// spy
