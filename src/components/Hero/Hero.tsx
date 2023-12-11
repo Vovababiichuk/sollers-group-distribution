@@ -31,7 +31,7 @@ export const Hero = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
-            <h1 className={`${styles.title} max-my-600:text-[60px] max-my-600:leading-[1.05]`}>
+            <h1 className={`${styles.title} max-my-600:text-[80px] max-my-600:leading-[1.05]`}>
               Your <span className="text-primary">Security</span> is Our Priority!
             </h1>
             <p className={`${styles.text} max-my-600:leading-[1.4]`}>
