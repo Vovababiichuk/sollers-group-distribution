@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, PhoneCall, ShieldCheck } from 'lucide-react';
+import { Instagram, Linkedin, PhoneCall } from 'lucide-react';
 import { Nav } from '../Nav/Nav';
 import styles from './Header.module.scss';
 import logo from '/images/logo/logo.png';
