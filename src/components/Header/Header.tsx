@@ -8,12 +8,12 @@ export const Header = () => {
   return (
     <div className="w-full bg-[#0b0b19] text-white h-16 max-my-930:h-24 max-my-600:h-16 z-50">
       <div className={styles.container}>
-        <div className="relative flex max-my-930:flex-col max-my-930:gap-4 max-my-600:gap-5 items-center justify-between">
+        <div className="relative flex max-my-930:flex-col max-my-930:gap-4 max-my-600:gap-3 items-center justify-between">
           {/* logo */}
           <a href="/">
             <img className={`${styles.logo} max-my-930:hidden`} src={logo} alt="logo" />
           </a>
-          <div className="hidden max-my-600:block text-primary font-bold uppercase text-[18px]">
+          <div className="hidden max-my-600:block text-primary font-bold uppercase text-[26px]">
             Sollers Group
           </div>
           {/* Nav */}

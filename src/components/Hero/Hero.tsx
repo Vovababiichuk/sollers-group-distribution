@@ -8,6 +8,8 @@ import { fadeIn } from '../../../variants';
 import { Link } from 'react-scroll';
 
 export const Hero = () => {
+  const amountValue = window.innerWidth < 600 ? "visible" : "hidden";
+
   return (
     <div id="home" className="bg-color_black-section2 text-white h-full w-full pt-16 max-my-600:pt-2 z-10">
       {/* <div className={styles.container}> */}
@@ -37,13 +39,6 @@ export const Hero = () => {
             <p className={`${styles.text} max-my-600:leading-[1.4]`}>
               Effective Cyber Security Solutions to Protect Your Online World
             </p>
-          </motion.div>
-
-          <motion.div
-            variants={fadeIn('up', 0.6)}
-            initial="hidden"
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.3 }}>
             <Link
               to={'contact'}
               className="cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300"

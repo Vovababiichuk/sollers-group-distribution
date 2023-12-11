@@ -32,7 +32,7 @@ export const About: React.FC = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
             <div className="flex items-center justify-center">
-              <h2 className={`${styles.titleAbout} max-my-600:mb-6`}>About Us</h2>
+              <h2 className={`${styles.titleAbout} max-my-600:mb-7`}>About Us</h2>
             </div>
           </motion.div>
           <div className="flex justify-between max-my-930:flex-col max-my-930:items-center">
