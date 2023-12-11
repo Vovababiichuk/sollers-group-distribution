@@ -24,7 +24,7 @@ export const About: React.FC = () => {
 
   return (
     <>
-      <div id="about" className="text-black bg-[#fFF] h-[800px] pt-44 relative">
+      <div id="about" className="text-black bg-[#fFF] h-[800px] max-my-600:h-[750px] pt-44 relative">
         <div className={style.container}>
           <motion.div
             variants={fadeIn('up', 0.2)}

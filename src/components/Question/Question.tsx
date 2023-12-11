@@ -14,7 +14,7 @@ import {
 
 export const Question: React.FC = () => {
   return (
-    <div id="question" className="h-[800px] pt-40 relative">
+    <div id="question" className="h-[800px] max-my-600:h-full max-my-600:max-h-[1300px] pt-40 relative">
       <div className={styles.container}>
         <motion.div
           variants={fadeIn('up', 0.1)}
@@ -25,7 +25,7 @@ export const Question: React.FC = () => {
             <h2 className={styles.titleQuestion}>Q/A</h2>
           </div>
         </motion.div>
-        <div className="flex items-center justify-center gap-[100px] mt-[-20px]">
+        <div className="flex items-center justify-center gap-[100px] max-my-600:gap-[0] mt-[-20px]">
           <motion.div
           className='w-full max-w-[600px] mt-[-30px]'
             variants={fadeIn('right', 0.3)}
@@ -36,8 +36,8 @@ export const Question: React.FC = () => {
               <span className="text-primary font-bold uppercase mb-4 block">
                   Premium Cyber Security Solutions
               </span>
-              <h2 className="text-4xl font-bold text-black mb-6">Answers to possible questions</h2>
-            <div>
+              <h2 className="max-my-600:text-center text-4xl font-bold text-black mb-6">Answers to possible questions</h2>
+            <div className='max-my-600:pb-20'>
               <Accordion backgroundColor={'#32b4ff'} color={'white'} borderRadius={'10px'}>
                 <AccordionItem>
                   <h2>
@@ -123,7 +123,7 @@ export const Question: React.FC = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
-            <div className="w-[500px]">
+            <div className="w-[500px] max-my-600:hidden">
               {/* <img src="/images/questions.svg" alt="logo" /> */}
               <img src="/images/3d-img/faq.svg" alt="logo" />
             </div>

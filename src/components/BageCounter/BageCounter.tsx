@@ -9,7 +9,7 @@ export const BageCounter = () => {
     <div>
        {/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */}
       <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-        <div className="flex items-center">
+        <div className="flex items-center max-my-600:flex-col">
           <div className="w-ful max-w-max p-3 rounded text-center">
             <h3 className="font-bold text-[36px] block mb-3 text-primary">
               {counterOn && <CountUp start={0} end={200} duration={2} delay={0} />}+

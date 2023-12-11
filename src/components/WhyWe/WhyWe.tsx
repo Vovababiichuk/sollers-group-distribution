@@ -9,7 +9,7 @@ import { fadeIn } from '../../../variants';
 export const WhyWe: React.FC = () => {
 
   return (
-    <div id="whywe" className="text-white bg-color_black-section2 h-[800px] pt-44 relative">
+    <div id="whywe" className="text-white bg-color_black-section2 h-[800px] max-my-600:h-[1050px] pt-44 relative">
       <div className={styles.container}>
         <motion.div
           variants={fadeIn('up', 0.1)}
@@ -20,7 +20,7 @@ export const WhyWe: React.FC = () => {
             <h2 className={styles.titleAbout}>Why Us?</h2>
           </div>
         </motion.div>
-        <div className="flex items-center justify-center gap-16 mt-[-10px]">
+        <div className="flex items-center justify-center gap-16 mt-[-10px] max-my-600:gap-1">
           <div className="flex flex-col gap-5 w-full max-w-xl">
             <motion.div
               variants={fadeIn('right', 0.2)}
@@ -61,7 +61,7 @@ export const WhyWe: React.FC = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.3 }}
               >
-                <div className="w-[470px] mt-[-30px]">
+                <div className="w-[470px] mt-[-30px] max-my-600:hidden">
                   {/* <img src="/images/reduce.svg" alt="logo" width={'550px'} /> */}
                   <img src="/images/3d-img/Endpoint-bro.svg" alt="logo" width={'550px'} />
                 </div>

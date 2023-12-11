@@ -104,7 +104,7 @@ export const Contacts: React.FC = () => {
         </motion.div>
 
         {/* Form section */}
-        <div className="flex items-center justify-center gap-[200px] mt-[-30px]">
+        <div className="flex items-center justify-center gap-[200px] max-my-600:gap-[0] mt-[-30px]">
           <div className="flex flex-col gap-5 w-full max-w-xl">
             <motion.div
               variants={fadeIn('right', 0.2)}
@@ -265,7 +265,7 @@ export const Contacts: React.FC = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
-            <div className="w-[500px]">
+            <div className="w-[500px] max-my-600:hidden">
               {/* <img src="/images/cards-img/51.svg" alt="logo" width={'550px'} /> */}
               <img src="/images/3d-img/email-amico.svg" alt="logo" width={'550px'} />
             </div>

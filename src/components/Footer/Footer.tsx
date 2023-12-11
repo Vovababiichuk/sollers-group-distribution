@@ -8,9 +8,9 @@ import { Linkedin, Instagram } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <div className={`h-[300px] bg-[#0b0b19] ${styles.footer}`}>
+    <div className={`h-[300px] max-my-600:h-full max-my-600:h-[400px] bg-[#0b0b19] ${styles.footer}`}>
       <div className={styles.container}>
-        <div className={styles.grid}>
+        <div className={`${styles.grid} max-my-600:flex max-my-600:flex-col max-my-600:mt-[-60px]`}>
           {/* Left column */}
           <motion.div
             variants={fadeIn('right', 0.3)}
@@ -37,9 +37,9 @@ export const Footer = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
-            <div className={styles.centerColumn}>
-              <img className={styles.logo} src={logo} alt="logo" />
-              <span className="text-gray-500 absolute top-[190px]">
+            <div className={`${styles.centerColumn}`}>
+              <img className={`${styles.logo} max-my-600:hidden`} src={logo} alt="logo" />
+              <span className="text-gray-500 absolute top-[190px] max-my-600:whitespace-nowrap">
                 sollers group &copy; {new Date().getFullYear()} All rights reserved
               </span>
             </div>
