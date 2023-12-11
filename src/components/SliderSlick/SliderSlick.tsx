@@ -1,4 +1,4 @@
-import styles from './SliderSwiper.module.scss';
+import styles from './SliderSlick.module.scss';
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -89,7 +89,7 @@ const CustomNextArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => (
   </div>
 );
 
-export const SliderSwiper = () => {
+export const SliderSlick = () => {
   const settings = {
     dots: true,
     infinite: true,

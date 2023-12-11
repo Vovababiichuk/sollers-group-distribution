@@ -1,5 +1,5 @@
 import styles from './Services.module.scss';
-import { SliderSwiper } from '../SliderSwiper/SliderSwiper';
+import { SliderSlick } from '../SliderSlick/SliderSlick';
 import { motion } from 'framer-motion';
 {/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */}
 import { fadeIn } from '../../../variants';
@@ -19,7 +19,7 @@ export const Services = () => {
         initial="hidden"
         whileInView={'show'}
         viewport={{ once: false, amount: 0.3 }}>
-        <SliderSwiper />
+        <SliderSlick />
       </motion.div>
     </div>
   );

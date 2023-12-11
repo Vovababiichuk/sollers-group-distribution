@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 
 export const Hero = () => {
   return (
-    <div id="home" className="bg-color_black-section2 text-white h-full w-full pt-16 z-10">
+    <div id="home" className="bg-color_black-section2 text-white h-full w-full pt-16 max-my-600:pt-2 z-10">
       {/* <div className={styles.container}> */}
       <div className={styles.relativeContainer}>
         <video
@@ -18,7 +18,7 @@ export const Hero = () => {
           autoPlay
           loop
           muted></video>
-        <div className={styles.centeredContent}>
+        <div className={`${styles.centeredContent} max-my-600:whitespace-normal`}>
           <motion.div
             variants={fadeIn('up', 0.2)}
             initial="hidden"
@@ -31,10 +31,10 @@ export const Hero = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
-            <h1 className={styles.title}>
+            <h1 className={`${styles.title} max-my-600:text-[60px] max-my-600:leading-[1.05]`}>
               Your <span className="text-primary">Security</span> is Our Priority!
             </h1>
-            <p className={styles.text}>
+            <p className={`${styles.text} max-my-600:leading-[1.4]`}>
               Effective Cyber Security Solutions to Protect Your Online World
             </p>
           </motion.div>
