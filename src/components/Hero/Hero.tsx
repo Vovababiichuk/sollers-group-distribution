@@ -8,8 +8,6 @@ import { fadeIn } from '../../../variants';
 import { Link } from 'react-scroll';
 
 export const Hero = () => {
-  const amountValue = window.innerWidth < 600 ? "visible" : "hidden";
-
   return (
     <div id="home" className="bg-color_black-section2 text-white h-full w-full pt-16 max-my-600:pt-2 z-10">
       {/* <div className={styles.container}> */}
