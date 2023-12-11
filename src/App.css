@@ -7,6 +7,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .header {
@@ -21,3 +22,4 @@ body {
   flex-grow: 1;
   color: #32b4ff;
 }
+

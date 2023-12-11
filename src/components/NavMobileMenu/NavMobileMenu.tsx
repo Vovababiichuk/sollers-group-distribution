@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 const links = [
 	{
 		path: 'home',
-		name: 'Home!!!',
+		name: 'Home',
 		offset: -50
 	},
 	{

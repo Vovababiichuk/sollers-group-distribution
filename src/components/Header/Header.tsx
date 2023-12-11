@@ -18,7 +18,7 @@ export const Header = () => {
             <Nav />
           </div>
           {/* MenuBtn */}
-          <div className='absolute right-7 top-5 right-2 z-10 hidden max-my-600:block'>
+          <div className='absolute right-0 top-5 z-10 hidden max-my-600:block'>
             <MenuBtn />
           </div>
           {/* Social */}

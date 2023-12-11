@@ -13,7 +13,7 @@ export const Hero = () => {
       {/* <div className={styles.container}> */}
       <div className={styles.relativeContainer}>
         <video
-          className={`${styles.video} ${styles['hue-rotate-100']}`}
+          className={`${styles.video} ${styles['hue-rotate-100']} `}
           src={videoMp4}
           autoPlay
           loop

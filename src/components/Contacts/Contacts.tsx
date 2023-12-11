@@ -104,7 +104,7 @@ export const Contacts: React.FC = () => {
         </motion.div>
 
         {/* Form section */}
-        <div className="flex items-center justify-center gap-60 mt-[-30px]">
+        <div className="flex items-center justify-center gap-[200px] mt-[-30px]">
           <div className="flex flex-col gap-5 w-full max-w-xl">
             <motion.div
               variants={fadeIn('right', 0.2)}

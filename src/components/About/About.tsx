@@ -35,7 +35,7 @@ export const About: React.FC = () => {
               <h2 className={styles.titleAbout}>About Us</h2>
             </div>
           </motion.div>
-          <div className="flex justify-between ">
+          <div className="flex justify-between max-my-930:flex-col max-my-930:items-center">
             <div className="flex flex-col gap-5 w-full max-w-xl">
               <motion.div
                 variants={fadeIn('up', 0.1)}
@@ -138,7 +138,7 @@ export const About: React.FC = () => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.3 }}>
-              <div className="w-[550px] mt-[-80px]">
+              <div className="w-[550px] mt-[-80px] max-my-930:hidden">
                 {/* <img src="/images/office.svg" alt="logo" width={'1000px'} /> */}
                 <img className='block' src="/images/3d-img/security-top.svg" alt="logo" width={'1000px'} />
               </div>
