@@ -9,7 +9,7 @@ import { fadeIn } from '../../../variants';
 export const WhyWe: React.FC = () => {
 
   return (
-    <div id="whywe" className="text-white bg-color_black-section2 h-[800px] max-my-600:h-[1050px] pt-44 relative">
+    <div id="whywe" className="text-white bg-color_black-section2 h-[800px] max-my-600:h-[980px] pt-44 relative">
       <div className={styles.container}>
         <motion.div
           variants={fadeIn('up', 0.1)}

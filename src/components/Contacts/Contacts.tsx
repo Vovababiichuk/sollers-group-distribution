@@ -90,7 +90,7 @@ export const Contacts: React.FC = () => {
   }, [isSuccess]);
 
   return (
-    <div id="contact" className="text-white bg-color_black-section2 h-[820px] pt-40 relative">
+    <div id="contact" className="text-white bg-color_black-section2 h-[820px] max-my-600:h-[780px] pt-40 relative">
       <div className={styles.container}>
         {/* Animation for the title */}
         <motion.div
