@@ -4,13 +4,14 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../../variants'; // Assuming this is a valid import
 import { Link } from 'react-scroll';
 import logo from '/images/logo/logo-blue.svg';
+
 import { Linkedin, Instagram } from 'lucide-react';
 import { PiTelegramLogoBold } from 'react-icons/pi';
 
 export const Footer = () => {
   return (
     <div
-      className={`h-[300px] max-my-600:h-full max-my-600:h-[400px] bg-[#0b0b19] ${styles.footer}`}>
+      className={`h-[300px] max-my-600:h-full max-my-600:h-[400px] bg-[#0b0b19] bg-[#2f2e41] ${styles.footer}`}>
       <div className={styles.container}>
         <div
           className={`${styles.grid} max-my-600:flex max-my-600:flex-col max-my-600:mt-[-60px] max-my-600:py-20`}>
@@ -25,7 +26,7 @@ export const Footer = () => {
               <div className="flex items-center justify-center gap-16 text-gray-500">
                 <div className="hover:scale-105 duration-300 transition ease-in-out">
                   <a href="https://gttb.com/" target="_blank">
-                    <img className="block w-[160px]" src="/images/partners/1.png" alt="" />
+                    <img className="block w-[200px]" src="/images/partners/1.png" alt="" />
                   </a>
                 </div>
                 <span>2</span>
@@ -56,7 +57,15 @@ export const Footer = () => {
             viewport={{ once: false, amount: 0.3 }}>
             <div className={styles.column}>
               {/* <h3 className="text-gray-500 text-center text-[24px] mb-6">Our sicials</h3> */}
-              <div className="flex items-center justify-center uppercase gap-8 text-white flex-wrap w-full max-w-[300px]">
+              <div className="flex items-center justify-center uppercase gap-4 text-white flex-wrap w-full max-w-[300px]">
+                <Link
+                  to={'home'}
+                  className="cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300"
+                  activeClass="active"
+                  smooth
+                  spy>
+                  Home
+                </Link>
                 <Link
                   to={'about'}
                   className="cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300"

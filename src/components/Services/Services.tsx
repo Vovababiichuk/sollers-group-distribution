@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 /*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */
 import { fadeIn } from '../../../variants';
 
-import bgSvg from '/images/decor-bg/wave-haikei7.svg';
+import bgSvg from '/images/decor-bg/wave-haikei-black2.svg';
 
 export const Services = () => {
   return (
@@ -17,7 +17,7 @@ export const Services = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       }}
-      className="h-[800px] flex flex-col items-center justify-center">
+      className="h-[900px] flex flex-col items-center justify-center">
       <motion.div
         variants={fadeIn('up', 0.1)}
         initial="hidden"

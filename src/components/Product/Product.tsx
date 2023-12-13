@@ -5,8 +5,11 @@ import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@chakra-ui/react';
 import { useState } from 'react';
 
 import { motion } from 'framer-motion';
-{/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */}
+
+/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */
 import { fadeIn } from '../../../variants';
+
+import bgSvg from '/images/decor-bg/wave-haikei-white4.svg';
 
 import {
   Modal,
@@ -37,7 +40,15 @@ export const Product: React.FC = () => {
   };
 
   return (
-    <div id="product" className="text-white h-[800px] pt-40 bg-color_black-section2">
+    <div
+      id="product"
+      style={{
+        backgroundImage: `url(${bgSvg})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }}
+      className="text-white h-[900px] pt-40 bg-color_black-section2">
       <div className={style.container}>
         <motion.div
           variants={fadeIn('up', 0.1)}
@@ -70,9 +81,15 @@ export const Product: React.FC = () => {
             viewport={{ once: false, amount: 0.3 }}>
             <Tabs isFitted variant="enclosed">
               <TabList mb="1em">
-                <Tab className='uppercase' onClick={() => setActiveTab(null)}>First Product</Tab>
-                <Tab className='uppercase' onClick={() => setActiveTab(null)}>Second Product</Tab>
-                <Tab className='uppercase' onClick={() => setActiveTab(null)}>Third Product</Tab>
+                <Tab className="uppercase" onClick={() => setActiveTab(null)}>
+                  First Product
+                </Tab>
+                <Tab className="uppercase" onClick={() => setActiveTab(null)}>
+                  Second Product
+                </Tab>
+                <Tab className="uppercase" onClick={() => setActiveTab(null)}>
+                  Third Product
+                </Tab>
               </TabList>
               <TabPanels>
                 <TabPanel>
@@ -144,9 +161,9 @@ export const Product: React.FC = () => {
                     </span> */}
                     <h2 className="text-4xl font-bold">Our second product is the best one</h2>
                     <p className="text-white h-[123px] text-[17px] overflow-hidden">
-                      Benefit from our state-of-the-art technology. Our advanced technologies are designed to
-                      safeguard your digital assets. Your data is safe with us. Computers are secure
-                      with us. Your online world is protected with us.
+                      Benefit from our state-of-the-art technology. Our advanced technologies are
+                      designed to safeguard your digital assets. Your data is safe with us.
+                      Computers are secure with us. Your online world is protected with us.
                     </p>
                     <div className="pt-4">
                       <ButtonMain onClick={() => openModal(1)} name="Learn More" blackBtn={false} />
@@ -202,10 +219,10 @@ export const Product: React.FC = () => {
                     </span> */}
                     <h2 className="text-4xl font-bold">Our third product is the best one</h2>
                     <p className="text-white h-[123px] text-[17px] overflow-hidden">
-                      Our products are designed to meet the evolving needs of the digital. Benefit from
-                      our state-of-the-art technology. Our advanced technologies are designed to
-                      safeguard your digital assets. Your data is safe with us. Computers are secure
-                      with us. Your online world is protected with us.
+                      Our products are designed to meet the evolving needs of the digital. Benefit
+                      from our state-of-the-art technology. Our advanced technologies are designed
+                      to safeguard your digital assets. Your data is safe with us. Computers are
+                      secure with us. Your online world is protected with us.
                     </p>
                     <div className="pt-4">
                       <ButtonMain onClick={() => openModal(2)} name="Learn More" blackBtn={false} />

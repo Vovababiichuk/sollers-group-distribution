@@ -4,17 +4,27 @@ import styles from './WhyWe.module.scss';
 import { BageCounter } from '../BageCounter/BageCounter';
 
 import { motion } from 'framer-motion';
-{/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */}
+{
+  /*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */
+}
 import { fadeIn } from '../../../variants';
 
-import { MdOutlineSupportAgent } from "react-icons/md";
-import { GrUserExpert } from "react-icons/gr";
+import { MdOutlineSupportAgent } from 'react-icons/md';
+import { GrUserExpert } from 'react-icons/gr';
 
+import bgSvg from '/images/decor-bg/wave-haikei-white3.svg';
 
 export const WhyWe: React.FC = () => {
-
   return (
-    <div id="whywe" className="text-white bg-color_black-section2 h-[800px] max-my-600:h-[980px] pt-44 relative">
+    <div
+      id="whywe"
+      style={{
+        backgroundImage: `url(${bgSvg})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }}
+      className="text-white bg-color_black-section2 h-[900px] max-my-600:h-[980px] pt-44 relative">
       <div className={styles.container}>
         <motion.div
           variants={fadeIn('up', 0.1)}
@@ -36,7 +46,10 @@ export const WhyWe: React.FC = () => {
                 Premium Cyber Security Solutions
               </span>
               <div className="flex gap-2 items-center ">
-                <MdOutlineSupportAgent size={32} style={{ marginBottom: '6px', color: '#ababab' }}  />
+                <MdOutlineSupportAgent
+                  size={32}
+                  style={{ marginBottom: '6px', color: '#ababab' }}
+                />
                 <span className="text-[24px] font-bold uppercase mb-2">Support 24/7</span>
               </div>
               <div className="flex gap-2 items-center">
@@ -58,19 +71,17 @@ export const WhyWe: React.FC = () => {
             </motion.div>
 
             <BageCounter />
-           
           </div>
           <motion.div
-              variants={fadeIn('left', 0.3)}
-              initial="hidden"
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.3 }}
-              >
-                <div className="w-[470px] mt-[-30px] max-my-600:hidden">
-                  {/* <img src="/images/reduce.svg" alt="logo" width={'550px'} /> */}
-                  <img src="/images/3d-img/Endpoint-bro.svg" alt="logo" width={'550px'} />
-                </div>
-              </motion.div>
+            variants={fadeIn('left', 0.3)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}>
+            <div className="w-[470px] mt-[-30px] max-my-600:hidden">
+              {/* <img src="/images/reduce.svg" alt="logo" width={'550px'} /> */}
+              <img src="/images/3d-img/Endpoint-bro.svg" alt="logo" width={'550px'} />
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>

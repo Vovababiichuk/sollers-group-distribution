@@ -13,6 +13,8 @@ import { useForm } from 'react-hook-form';
 import { MailCheck, MailWarning } from 'lucide-react';
 import { ButtonMain } from '../ButtonMain/ButtonMain';
 
+import bgSvg from '/images/decor-bg/wave-haikei-primary.svg';
+
 interface FormData {
   name: string;
   position: string;
@@ -80,8 +82,8 @@ export const Contacts: React.FC = () => {
     }
   };
 
-   // Закриваємо таймер при розмонтовуванні компонента або при зміні isSuccess
-   React.useEffect(() => {
+  // Закриваємо таймер при розмонтовуванні компонента або при зміні isSuccess
+  React.useEffect(() => {
     return () => {
       if (showMessageTimeout) {
         clearTimeout(showMessageTimeout);
@@ -90,7 +92,15 @@ export const Contacts: React.FC = () => {
   }, [isSuccess]);
 
   return (
-    <div id="contact" className="text-white bg-color_black-section2 h-[820px] max-my-600:h-[780px] pt-40 relative">
+    <div
+      id="contact"
+      style={{
+        backgroundImage: `url(${bgSvg})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }}
+      className="text-white bg-color_black-section2 h-[920px] max-my-600:h-[780px] pt-40 relative">
       <div className={styles.container}>
         {/* Animation for the title */}
         <motion.div
@@ -170,7 +180,7 @@ export const Contacts: React.FC = () => {
                           pattern: {
                             value: REG_EX.phone,
                             message: 'Please enter a valid phone number!',
-                          }
+                          },
                         })}
                         type="text"
                         name="phone"

@@ -5,8 +5,6 @@ import { motion } from 'framer-motion';
 /*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */
 import { fadeIn } from '../../../variants';
 
-import bgSvg from '/images/decor-bg/wave-haikei7.svg';
-
 import {
   Accordion,
   AccordionButton,
@@ -15,6 +13,8 @@ import {
   AccordionPanel,
   Box,
 } from '@chakra-ui/react';
+
+import bgSvg from '/images/decor-bg/wave-haikei-black2.svg';
 
 export const Question: React.FC = () => {
   return (
@@ -26,7 +26,7 @@ export const Question: React.FC = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       }}
-      className="h-[800px] max-my-600:h-full max-my-600:max-h-[1300px] pt-40 relative">
+      className="h-[900px] max-my-600:h-full max-my-600:max-h-[1300px] pt-40 relative">
       <div className={styles.container}>
         <motion.div
           variants={fadeIn('up', 0.1)}
