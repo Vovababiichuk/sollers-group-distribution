@@ -60,7 +60,7 @@ export const Question: React.FC = () => {
                         flex="1"
                         textAlign="left"
                         fontSize={'18px'}
-                        textTransform={'uppercase'}>
+                        textTransform={'capitalize'}>
                         How is Chakra UI Pro different from Chakra UI?
                       </Box>
                       <AccordionIcon />
@@ -80,7 +80,7 @@ export const Question: React.FC = () => {
                         flex="1"
                         textAlign="left"
                         fontSize={'18px'}
-                        textTransform={'uppercase'}>
+                        textTransform={'capitalize'}>
                         What do I get when I buy a Chakra UI Pro license?
                       </Box>
                       <AccordionIcon />
@@ -100,7 +100,7 @@ export const Question: React.FC = () => {
                         flex="1"
                         textAlign="left"
                         fontSize={'18px'}
-                        textTransform={'uppercase'}>
+                        textTransform={'capitalize'}>
                         Does Chakra UI Pro come with a Figma file or similar?
                       </Box>
                       <AccordionIcon />
@@ -120,7 +120,7 @@ export const Question: React.FC = () => {
                         flex="1"
                         textAlign="left"
                         fontSize={'18px'}
-                        textTransform={'uppercase'}>
+                        textTransform={'capitalize'}>
                         How does the Team license work?
                       </Box>
                       <AccordionIcon />
@@ -140,7 +140,7 @@ export const Question: React.FC = () => {
                         flex="1"
                         textAlign="left"
                         fontSize={'20px'}
-                        textTransform={'uppercase'}>
+                        textTransform={'capitalize'}>
                         How does the Team license work?
                       </Box>
                       <AccordionIcon />

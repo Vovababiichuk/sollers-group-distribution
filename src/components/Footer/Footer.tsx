@@ -11,7 +11,7 @@ import { PiTelegramLogoBold } from 'react-icons/pi';
 export const Footer = () => {
   return (
     <div
-      className={`h-[300px] max-my-600:h-full max-my-600:h-[400px] bg-[#0b0b19] bg-[#2f2e41] ${styles.footer}`}>
+      className={`h-[380px] max-my-600:h-full max-my-600:h-[400px] bg-[#0b0b19] bg-[#2f2e41] ${styles.footer}`}>
       <div className={styles.container}>
         <div
           className={`${styles.grid} max-my-600:flex max-my-600:flex-col max-my-600:mt-[-60px] max-my-600:py-20`}>
@@ -43,9 +43,9 @@ export const Footer = () => {
             viewport={{ once: false, amount: 0.3 }}>
             <div className={`${styles.centerColumn}`}>
               <img className={`${styles.logo} max-my-600:hidden`} src={logo} alt="logo" />
-              <span className="text-gray-500 absolute top-[190px] max-my-600:whitespace-nowrap">
+              {/* <span className="text-gray-500 absolute top-[270px] max-my-600:whitespace-nowrap">
                 sollers group &copy; {new Date().getFullYear()} All rights reserved
-              </span>
+              </span> */}
             </div>
           </motion.div>
 

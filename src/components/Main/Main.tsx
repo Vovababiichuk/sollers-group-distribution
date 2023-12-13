@@ -3,7 +3,8 @@ import { Contacts } from '../Contacts/Contacts'
 import { Hero } from '../Hero/Hero'
 import { Product } from '../Product/Product'
 import { Question } from '../Question/Question'
-import { Services } from '../Services/Services'
+// import { Services } from '../Services/Services'
+import { ServicesTwo } from '../ServicesTwo/ServicesTwo'
 import { WhyWe } from '../WhyWe/WhyWe'
 export const Main = () => {
 	return (
@@ -17,8 +18,11 @@ export const Main = () => {
 			<section>
 				<Product />
 			</section>
-			<section>
+			{/* <section>
 				<Services />
+			</section> */}
+			<section>
+				<ServicesTwo />
 			</section>
 			<section>
 				<WhyWe />

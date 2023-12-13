@@ -1,0 +1,26 @@
+.container {
+  @apply max-w-screen-xl mx-auto px-4
+}
+
+.titleServices {
+	@apply text-5xl font-bold text-black text-center mb-[80px] mt-[-160px];
+
+	&::after {
+		content: '';
+		background-image: url('/images/decor2.svg');
+		background-repeat: no-repeat;
+		width: 190px;
+		height: 45px;
+		display: block;
+		margin-top: -24px;
+		margin-left: 620px;
+	}
+}
+
+.title {
+  @apply text-black font-bold text-[40px] capitalize text-white flex-1 mb-4 xl:mb-0 text-center xl:text-left
+}
+
+.text {
+  @apply text-[18px] text-white flex-1 text-center xl:text-left max-w-2xl xl:max-w-none
+}
