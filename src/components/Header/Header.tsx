@@ -1,4 +1,5 @@
 import { Instagram, Linkedin, PhoneCall } from 'lucide-react';
+import { PiTelegramLogoBold } from "react-icons/pi";
 import { Nav } from '../Nav/Nav';
 import styles from './Header.module.scss';
 import logo from '/images/logo/logo.png';
@@ -26,18 +27,23 @@ export const Header = () => {
           </div>
           {/* Social */}
           <div className="flex items-center gap-10 max-my-600:hidden">
-            <div className="flex items-center gap-2">
-              <div className="hover:scale-125 duration-300 transition ease-in-out  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-md">
+            <ul className="flex items-center gap-2">
+              <li className="hover:scale-125 duration-300 transition ease-in-out  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-md">
                 <a href="https://www.linkedin.com/" target="_blank">
                   <Linkedin size={14} />
                 </a>
-              </div>
-              <div className="hover:scale-125 duration-300 transition ease-in-out bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-1 rounded-md">
+              </li>
+              <li className="hover:scale-125 duration-300 transition ease-in-out bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-1 rounded-md">
                 <a href="https://www.instagram.com/" target="_blank">
                   <Instagram size={14} />
                 </a>
-              </div>
-            </div>
+              </li>
+              <li className="hover:scale-125 duration-300 transition ease-in-out bg-gradient-to-r bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-full">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <PiTelegramLogoBold size={15} />
+                </a>
+              </li>
+            </ul>
             <div className={styles.phone}>
               <span>
                 <PhoneCall size={18} />

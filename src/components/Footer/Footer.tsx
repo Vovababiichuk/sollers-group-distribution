@@ -5,12 +5,15 @@ import { fadeIn } from '../../../variants'; // Assuming this is a valid import
 import { Link } from 'react-scroll';
 import logo from '/images/logo/logo-blue.svg';
 import { Linkedin, Instagram } from 'lucide-react';
+import { PiTelegramLogoBold } from 'react-icons/pi';
 
 export const Footer = () => {
   return (
-    <div className={`h-[300px] max-my-600:h-full max-my-600:h-[400px] bg-[#0b0b19] ${styles.footer}`}>
+    <div
+      className={`h-[300px] max-my-600:h-full max-my-600:h-[400px] bg-[#0b0b19] ${styles.footer}`}>
       <div className={styles.container}>
-        <div className={`${styles.grid} max-my-600:flex max-my-600:flex-col max-my-600:mt-[-60px] max-my-600:py-20`}>
+        <div
+          className={`${styles.grid} max-my-600:flex max-my-600:flex-col max-my-600:mt-[-60px] max-my-600:py-20`}>
           {/* Left column */}
           <motion.div
             variants={fadeIn('right', 0.3)}
@@ -106,18 +109,23 @@ export const Footer = () => {
                 <span className="hover:text-primary hover:cursor-pointer hover:border-b-2 hover:border-primary">
                   Contact
                 </span>
-                <div className="flex items-center gap-6">
-                  <div className="hover:scale-125 duration-300 transition ease-in-out  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-md">
+                <ul className="flex items-center gap-6">
+                  <li className="hover:scale-125 duration-300 transition ease-in-out  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-md">
                     <a href="https://www.linkedin.com/" target="_blank">
                       <Linkedin size={16} />
                     </a>
-                  </div>
-                  <div className="hover:scale-125 duration-300 transition ease-in-out bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-1 rounded-md">
+                  </li>
+                  <li className="hover:scale-125 duration-300 transition ease-in-out bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-1 rounded-md">
                     <a href="https://www.instagram.com/" target="_blank">
                       <Instagram size={16} />
                     </a>
-                  </div>
-                </div>
+                  </li>
+                  <li className="hover:scale-125 duration-300 transition ease-in-out bg-gradient-to-r bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-full">
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <PiTelegramLogoBold size={15} />
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </motion.div>
