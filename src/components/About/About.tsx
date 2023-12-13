@@ -1,4 +1,4 @@
-import { CheckSquare, FolderLock, ShieldCheck, UserCog } from 'lucide-react';
+import { FolderLock, ShieldCheck, UserCog } from 'lucide-react';
 import { ButtonMain } from '../ButtonMain/ButtonMain';
 import style from './About.module.scss';
 import styles from './About.module.scss';
@@ -55,7 +55,6 @@ export const About: React.FC = () => {
                 <div className='flex flex-col gap-3 text-[17px]'>
                   <div className="flex gap-3 items-center">
                     <span>
-                      {/* <CheckSquare /> */}
                       <ShieldCheck size={28} />
                     </span>
                     <p className="font-medium">
@@ -65,7 +64,6 @@ export const About: React.FC = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <span>
-                      {/* <CheckSquare /> */}
                       <FolderLock />
                     </span>
                     <p className="font-medium">
@@ -75,7 +73,6 @@ export const About: React.FC = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <span>
-                      {/* <CheckSquare /> */}
                       <UserCog />
                     </span>
                     <p className="font-medium">
