@@ -20,7 +20,7 @@ import {
 import { Button as ChakraButton } from '@chakra-ui/react';
 import { useDisclosure } from '@chakra-ui/react';
 
-import bgSvg from '../../../public/images/decor-bg/wave-haikei7.svg';
+import bgSvg from '/images/decor-bg/wave-haikei7.svg';
 
 export const About: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

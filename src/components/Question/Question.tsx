@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 /*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */
 import { fadeIn } from '../../../variants';
 
-import bgSvg from '../../../public/images/decor-bg/wave-haikei7.svg';
+import bgSvg from '/images/decor-bg/wave-haikei7.svg';
 
 import {
   Accordion,
