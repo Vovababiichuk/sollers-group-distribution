@@ -50,76 +50,77 @@ export const ServicesTwo = () => {
 									<ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 										<li className="bg-white shadow-lg shadow-primary/50  p-[30px] rounded-[10px] min-h-[288px] flex flex-col items-center text-center">
 											<div className="mb-[15px]">
-												<img src="/images//cards-img/26.svg" style={{ width: '80px' }} alt="icon" />
+												<img src="/images//cards-img/26.svg" style={{ width: '100px' }} alt="icon" />
 											</div>
-											<h3 className="text-[20px] text-black font-bold mb-[10px]">
+											<h3 className="text-[22px] text-black font-bold mb-[10px]">
 												General Fractitioners
 											</h3>
-											<p className="text-[16px] text-black font-light leading-normal max-w-[300px] ">
+											<p className="text-[17px] text-black font-light leading-normal max-w-[300px] ">
 												Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
 												amet consectetur adipisicing elit.
 											</p>
 										</li>
-										<li className="bg-white shadow-lg shadow-primary/50 p-[30px] rounded-[10px] min-h-[288px] flex flex-col items-center text-center">
+										<li className="bg-white shadow-lg shadow-primary/50  p-[30px] rounded-[10px] min-h-[288px] flex flex-col items-center text-center">
 											<div className="mb-[15px]">
-												<img src="/images//cards-img/26.svg" style={{ width: '80px' }} alt="icon" />
+												<img src="/images//cards-img/26.svg" style={{ width: '100px' }} alt="icon" />
 											</div>
-											<h3 className="text-[20px] text-black font-bold mb-[10px]">
+											<h3 className="text-[22px] text-black font-bold mb-[10px]">
 												General Fractitioners
 											</h3>
-											<p className="text-[16px] text-black font-light leading-normal max-w-[300px] ">
+											<p className="text-[17px] text-black font-light leading-normal max-w-[300px] ">
 												Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
 												amet consectetur adipisicing elit.
 											</p>
 										</li>
-										<li className="bg-white shadow-lg shadow-primary/50 p-[30px] rounded-[10px] min-h-[288px] flex flex-col items-center text-center">
+										<li className="bg-white shadow-lg shadow-primary/50  p-[30px] rounded-[10px] min-h-[288px] flex flex-col items-center text-center">
 											<div className="mb-[15px]">
-												<img src="/images//cards-img/26.svg" style={{ width: '80px' }} alt="icon" />
+												<img src="/images//cards-img/26.svg" style={{ width: '100px' }} alt="icon" />
 											</div>
-											<h3 className="text-[20px] text-black font-bold mb-[10px]">
+											<h3 className="text-[22px] text-black font-bold mb-[10px]">
 												General Fractitioners
 											</h3>
-											<p className="text-[16px] text-black font-light leading-normal max-w-[300px] ">
+											<p className="text-[17px] text-black font-light leading-normal max-w-[300px] ">
 												Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
 												amet consectetur adipisicing elit.
 											</p>
 										</li>
-										<li className="bg-white shadow-lg shadow-primary/50 p-[30px] rounded-[10px] min-h-[288px] flex flex-col items-center text-center">
+										<li className="bg-white shadow-lg shadow-primary/50  p-[30px] rounded-[10px] min-h-[288px] flex flex-col items-center text-center">
 											<div className="mb-[15px]">
-												<img src="/images//cards-img/26.svg" style={{ width: '80px' }} alt="icon" />
+												<img src="/images//cards-img/26.svg" style={{ width: '100px' }} alt="icon" />
 											</div>
-											<h3 className="text-[20px] text-black font-bold mb-[10px]">
+											<h3 className="text-[22px] text-black font-bold mb-[10px]">
 												General Fractitioners
 											</h3>
-											<p className="text-[16px] text-black font-light leading-normal max-w-[300px] ">
+											<p className="text-[17px] text-black font-light leading-normal max-w-[300px] ">
 												Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
 												amet consectetur adipisicing elit.
 											</p>
 										</li>
-										<li className="bg-white shadow-lg shadow-primary/50 p-[30px] rounded-[10px] min-h-[288px] flex flex-col items-center text-center">
+										<li className="bg-white shadow-lg shadow-primary/50  p-[30px] rounded-[10px] min-h-[288px] flex flex-col items-center text-center">
 											<div className="mb-[15px]">
-												<img src="/images//cards-img/26.svg" style={{ width: '80px' }} alt="icon" />
+												<img src="/images//cards-img/26.svg" style={{ width: '100px' }} alt="icon" />
 											</div>
-											<h3 className="text-[20px] text-black font-bold mb-[10px]">
+											<h3 className="text-[22px] text-black font-bold mb-[10px]">
 												General Fractitioners
 											</h3>
-											<p className="text-[16px] text-black font-light leading-normal max-w-[300px] ">
+											<p className="text-[17px] text-black font-light leading-normal max-w-[300px] ">
 												Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
 												amet consectetur adipisicing elit.
 											</p>
 										</li>
-										<li className="bg-white shadow-lg shadow-primary/50 p-[30px] rounded-[10px] min-h-[288px] flex flex-col items-center text-center">
+										<li className="bg-white shadow-lg shadow-primary/50  p-[30px] rounded-[10px] min-h-[288px] flex flex-col items-center text-center">
 											<div className="mb-[15px]">
-												<img src="/images//cards-img/26.svg" style={{ width: '80px' }} alt="icon" />
+												<img src="/images//cards-img/26.svg" style={{ width: '100px' }} alt="icon" />
 											</div>
-											<h3 className="text-[20px] text-black font-bold mb-[10px]">
+											<h3 className="text-[22px] text-black font-bold mb-[10px]">
 												General Fractitioners
 											</h3>
-											<p className="text-[16px] text-black font-light leading-normal max-w-[300px] ">
+											<p className="text-[17px] text-black font-light leading-normal max-w-[300px] ">
 												Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
 												amet consectetur adipisicing elit.
 											</p>
 										</li>
+									
 										
 									</ul>
 								</div>
