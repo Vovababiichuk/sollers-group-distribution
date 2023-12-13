@@ -1,4 +1,4 @@
-import { CheckSquare, ShieldCheck } from 'lucide-react';
+import { CheckSquare, FolderLock, ShieldCheck, UserCog } from 'lucide-react';
 import { ButtonMain } from '../ButtonMain/ButtonMain';
 import style from './About.module.scss';
 import styles from './About.module.scss';
@@ -53,27 +53,30 @@ export const About: React.FC = () => {
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}>
                 <div className='flex flex-col gap-4'>
-                  <div className="flex gap-2 items-center">
+                  <div className="flex gap-3 items-center">
                     <span>
-                      <CheckSquare />
+                      {/* <CheckSquare /> */}
+                      <ShieldCheck size={28} />
                     </span>
                     <p className="font-medium">
                       We offer state-of-the-art cyber security solutions to protect your online. Our
                       products are designed to meet the evolving needs of the digital.
                     </p>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-3">
                     <span>
-                      <CheckSquare />
+                      {/* <CheckSquare /> */}
+                      <FolderLock />
                     </span>
                     <p className="font-medium">
                       Benefit from our state-of-the-art technology. Our advanced technologies are
                       designed to safeguard your digital assets.
                     </p>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-3">
                     <span>
-                      <CheckSquare />
+                      {/* <CheckSquare /> */}
+                      <UserCog />
                     </span>
                     <p className="font-medium">
                       Your data is safe with us. Computers are secure with us. Your online world is
