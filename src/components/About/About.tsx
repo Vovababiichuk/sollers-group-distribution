@@ -52,32 +52,34 @@ export const About: React.FC = () => {
                 initial="hidden"
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}>
-                <div className="flex gap-2 items-center">
-                  <span>
-                    <CheckSquare />
-                  </span>
-                  <p className="font-medium">
-                    We offer state-of-the-art cyber security solutions to protect your online. Our
-                    products are designed to meet the evolving needs of the digital.
-                  </p>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>
-                    <CheckSquare />
-                  </span>
-                  <p className="font-medium">
-                    Benefit from our state-of-the-art technology. Our advanced technologies are
-                    designed to safeguard your digital assets.
-                  </p>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>
-                    <CheckSquare />
-                  </span>
-                  <p className="font-medium">
-                    Your data is safe with us. Computers are secure with us. Your online world is
-                    protected with us.
-                  </p>
+                <div className='flex flex-col gap-4'>
+                  <div className="flex gap-2 items-center">
+                    <span>
+                      <CheckSquare />
+                    </span>
+                    <p className="font-medium">
+                      We offer state-of-the-art cyber security solutions to protect your online. Our
+                      products are designed to meet the evolving needs of the digital.
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span>
+                      <CheckSquare />
+                    </span>
+                    <p className="font-medium">
+                      Benefit from our state-of-the-art technology. Our advanced technologies are
+                      designed to safeguard your digital assets.
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span>
+                      <CheckSquare />
+                    </span>
+                    <p className="font-medium">
+                      Your data is safe with us. Computers are secure with us. Your online world is
+                      protected with us.
+                    </p>
+                  </div>
                 </div>
               </motion.div>
               <motion.div
