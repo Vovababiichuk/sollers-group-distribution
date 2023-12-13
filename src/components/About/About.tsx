@@ -3,7 +3,8 @@ import { ButtonMain } from '../ButtonMain/ButtonMain';
 import style from './About.module.scss';
 import styles from './About.module.scss';
 import { motion } from 'framer-motion';
-{/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */}
+
+/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */
 import { fadeIn } from '../../../variants';
 
 import {
@@ -19,12 +20,22 @@ import {
 import { Button as ChakraButton } from '@chakra-ui/react';
 import { useDisclosure } from '@chakra-ui/react';
 
+import bgSvg from '../../../public/images/decor-bg/wave-haikei7.svg';
+
 export const About: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
-      <div id="about" className="text-black bg-[#fFF] h-[800px] max-my-600:h-[750px] pt-44 relative">
+      <div
+        id="about"
+        style={{
+          backgroundImage: `url(${bgSvg})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+        }}
+        className="text-black h-[800px] max-my-600:h-[920px] pt-44 relative">
         <div className={style.container}>
           <motion.div
             variants={fadeIn('up', 0.2)}
@@ -52,8 +63,8 @@ export const About: React.FC = () => {
                 initial="hidden"
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}>
-                <div className='flex flex-col gap-3 text-[17px]'>
-                  <div className="flex gap-3 items-center">
+                <div className="flex flex-col gap-3 text-[17px]">
+                  <div className="flex gap-3 items-center relative">
                     <span>
                       <ShieldCheck size={28} />
                     </span>
@@ -92,15 +103,9 @@ export const About: React.FC = () => {
                 </div>
               </motion.div>
 
-              <Modal
-              isOpen={isOpen} onClose={onClose} size={'2xl'}
-              >
-                <ModalOverlay
-                  bg="blackAlpha.900"
-                  />
-                <ModalContent
-                  marginTop={"150px"}
-                >
+              <Modal isOpen={isOpen} onClose={onClose} size={'2xl'}>
+                <ModalOverlay bg="blackAlpha.900" />
+                <ModalContent marginTop={'150px'}>
                   <ModalHeader>
                     <div className="uppercase text-primary flex items-center justify-center">
                       <div>
@@ -142,7 +147,12 @@ export const About: React.FC = () => {
               viewport={{ once: false, amount: 0.3 }}>
               <div className="w-[550px] mt-[-80px] max-my-930:hidden">
                 {/* <img src="/images/office.svg" alt="logo" width={'1000px'} /> */}
-                <img className='block' src="/images/3d-img/security-top.svg" alt="logo" width={'1000px'} />
+                <img
+                  className="block"
+                  src="/images/3d-img/security-top.svg"
+                  alt="logo"
+                  width={'1000px'}
+                />
               </div>
             </motion.div>
           </div>

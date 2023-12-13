@@ -1,10 +1,15 @@
 import { CheckSquare } from 'lucide-react';
 import styles from './WhyWe.module.scss';
+
 import { BageCounter } from '../BageCounter/BageCounter';
 
 import { motion } from 'framer-motion';
 {/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */}
 import { fadeIn } from '../../../variants';
+
+import { MdOutlineSupportAgent } from "react-icons/md";
+import { GrUserExpert } from "react-icons/gr";
+
 
 export const WhyWe: React.FC = () => {
 
@@ -30,12 +35,12 @@ export const WhyWe: React.FC = () => {
               <span className="text-primary font-bold uppercase mb-4 block">
                 Premium Cyber Security Solutions
               </span>
-              <div className="flex gap-2 items-center">
-                <CheckSquare />
+              <div className="flex gap-2 items-center ">
+                <MdOutlineSupportAgent size={32} style={{ marginBottom: '6px', color: '#ababab' }}  />
                 <span className="text-[24px] font-bold uppercase mb-2">Support 24/7</span>
               </div>
               <div className="flex gap-2 items-center">
-                <CheckSquare />
+                <GrUserExpert size={32} style={{ marginBottom: '6px' }} />
                 <span className="text-[24px] font-bold uppercase mb-2">
                   Highest Cyber Security Expertise
                 </span>
