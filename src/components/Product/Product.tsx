@@ -70,9 +70,9 @@ export const Product: React.FC = () => {
             viewport={{ once: false, amount: 0.3 }}>
             <Tabs isFitted variant="enclosed">
               <TabList mb="1em">
-                <Tab onClick={() => setActiveTab(null)}>First Product</Tab>
-                <Tab onClick={() => setActiveTab(null)}>Second Product</Tab>
-                <Tab onClick={() => setActiveTab(null)}>Third Product</Tab>
+                <Tab className='uppercase' onClick={() => setActiveTab(null)}>First Product</Tab>
+                <Tab className='uppercase' onClick={() => setActiveTab(null)}>Second Product</Tab>
+                <Tab className='uppercase' onClick={() => setActiveTab(null)}>Third Product</Tab>
               </TabList>
               <TabPanels>
                 <TabPanel>
@@ -83,7 +83,7 @@ export const Product: React.FC = () => {
                     <h2 className="text-4xl font-bold">
                       We care about protecting your confidential data
                     </h2>
-                    <p className="text-white h-[120px] overflow-hidden">
+                    <p className="text-white h-[123px] text-[17px] overflow-hidden">
                       We offer state-of-the-art cyber security solutions to protect your online. Our
                       products are designed to meet the evolving needs of the digital. Benefit from
                       our state-of-the-art technology. Our advanced technologies are designed to
@@ -143,7 +143,7 @@ export const Product: React.FC = () => {
                       Premium Cyber Security Solutions
                     </span> */}
                     <h2 className="text-4xl font-bold">Our second product is the best one</h2>
-                    <p className="text-white h-[120px] overflow-hidden">
+                    <p className="text-white h-[123px] text-[17px] overflow-hidden">
                       Benefit from our state-of-the-art technology. Our advanced technologies are designed to
                       safeguard your digital assets. Your data is safe with us. Computers are secure
                       with us. Your online world is protected with us.
@@ -201,7 +201,7 @@ export const Product: React.FC = () => {
                       Premium Cyber Security Solutions
                     </span> */}
                     <h2 className="text-4xl font-bold">Our third product is the best one</h2>
-                    <p className="text-white h-[120px] overflow-hidden">
+                    <p className="text-white h-[123px] text-[17px] overflow-hidden">
                       Our products are designed to meet the evolving needs of the digital. Benefit from
                       our state-of-the-art technology. Our advanced technologies are designed to
                       safeguard your digital assets. Your data is safe with us. Computers are secure
