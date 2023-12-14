@@ -8,20 +8,21 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../../variants';
 import { Link } from 'react-scroll';
 
-import bgSvg from '/images/decor-bg/wave-haikei-black2-hero.svg';
+// import bgSvg from '/images/decor-bg/wave-haikei-black2-hero.svg';
 
 export const Hero = () => {
   return (
     <div
       id="home"
-      style={{
-        backgroundImage: `url(${bgSvg})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        zIndex: 1000,
-      }}
-      className="bg-color_black-section2 text-white h-full h-[903px] max-my-600:h-[700px] w-full pt-16 max-my-600:pt-2 z-10">
+      // style={{
+      //   backgroundImage: `url(${bgSvg})`,
+      //   backgroundSize: 'cover',
+      //   backgroundRepeat: 'no-repeat',
+      //   backgroundPosition: 'center',
+      //   zIndex: 1000,
+      //   height: '1000px',
+      // }}
+      className="bg-color_black-section2 text-white h-full max-my-600:h-[700px] w-full pt-16 max-my-600:pt-2 z-10">
       {/* <div className={styles.container}> */}
       <div className={styles.relativeContainer}>
         <video

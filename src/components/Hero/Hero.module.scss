@@ -9,6 +9,9 @@
 .video {
   @apply absolute top-0 left-0 right-0 w-full h-full object-cover bg-cover bg-opacity-50 hue-rotate-100 opacity-30;
 }
+/* .video {
+  @apply absolute top-0 left-0 right-0 w-full h-full object-cover bg-cover hue-rotate-100;
+} */
 
 .relativeContainer {
   @apply relative h-screen w-full z-[1];
