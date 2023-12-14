@@ -1,15 +1,27 @@
 import styles from './Hero.module.scss';
 import videoMp4 from '/videos/video.mp4';
-import logo from '/images/logo/logo-blue.svg';
+import logo from '/images/logo/logo-blue3.svg';
 import { ButtonMain } from '../ButtonMain/ButtonMain';
 import { motion } from 'framer-motion';
-{/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */}
+
+  /*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */
 import { fadeIn } from '../../../variants';
 import { Link } from 'react-scroll';
 
+import bgSvg from '/images/decor-bg/wave-haikei-black2-hero.svg';
+
 export const Hero = () => {
   return (
-    <div id="home" className="bg-color_black-section2 text-white h-full max-my-600:h-[700px] w-full pt-16 max-my-600:pt-2 z-10">
+    <div
+      id="home"
+      style={{
+        backgroundImage: `url(${bgSvg})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        zIndex: 1000,
+      }}
+      className="bg-color_black-section2 text-white h-full h-[902px] max-my-600:h-[700px] w-full pt-16 max-my-600:pt-2 z-10">
       {/* <div className={styles.container}> */}
       <div className={styles.relativeContainer}>
         <video

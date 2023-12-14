@@ -82,13 +82,13 @@ export const Product: React.FC = () => {
             viewport={{ once: false, amount: 0.3 }}>
             <Tabs isFitted variant="enclosed">
               <TabList mb="1em">
-                <Tab className="uppercase" onClick={() => setActiveTab(null)}>
+                <Tab _selected={{ color: '#32b4ff', borderColor: 'white' }} className="uppercase" onClick={() => setActiveTab(null)}>
                   First Product
                 </Tab>
-                <Tab className="uppercase" onClick={() => setActiveTab(null)}>
+                <Tab _selected={{ color: '#32b4ff', borderColor: 'white' }} className="uppercase" onClick={() => setActiveTab(null)}>
                   Second Product
                 </Tab>
-                <Tab className="uppercase" onClick={() => setActiveTab(null)}>
+                <Tab _selected={{ color: '#32b4ff', borderColor: 'white' }} className="uppercase" onClick={() => setActiveTab(null)}>
                   Third Product
                 </Tab>
               </TabList>

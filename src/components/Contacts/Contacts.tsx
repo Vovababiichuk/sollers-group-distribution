@@ -13,7 +13,8 @@ import { useForm } from 'react-hook-form';
 import { MailCheck, MailWarning } from 'lucide-react';
 import { ButtonMain } from '../ButtonMain/ButtonMain';
 
-import bgSvg from '/images/decor-bg/wave-haikei-primary.svg';
+// import bgSvg from '/images/decor-bg/wave-haikei-primary.svg';
+import bgSvg from '/images/decor-bg/wave-haikei-primary2.svg';
 
 interface FormData {
   name: string;
