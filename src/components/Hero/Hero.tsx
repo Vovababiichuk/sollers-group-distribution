@@ -21,7 +21,7 @@ export const Hero = () => {
         backgroundPosition: 'center',
         zIndex: 1000,
       }}
-      className="bg-color_black-section2 text-white h-full h-[902px] max-my-600:h-[700px] w-full pt-16 max-my-600:pt-2 z-10">
+      className="bg-color_black-section2 text-white h-full h-[903px] max-my-600:h-[700px] w-full pt-16 max-my-600:pt-2 z-10">
       {/* <div className={styles.container}> */}
       <div className={styles.relativeContainer}>
         <video
