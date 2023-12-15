@@ -22,7 +22,7 @@ export const Footer = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
             <div className={styles.column}>
-              <h3 className=" text-white text-center text-[24px] mb-6">Our Partners</h3>
+              <h3 className=" text-white text-center text-[24px] mb-6 font-bold">Our Partners</h3>
               <ul className="flex flex-wrap justify-center gap-6 bg-blue-300 p-6 rounded-[24px] hover:scale-105 duration-300 transition ease-in-out">
                 <li className="hover:scale-105 duration-300 transition ease-in-out mr-2">
                   <a href="https://gttb.com/" target="_blank">
@@ -99,7 +99,7 @@ export const Footer = () => {
             viewport={{ once: false, amount: 0.3 }}>
             <div className={styles.column}>
               {/* <h3 className="text-gray-500 text-center text-[24px] mb-6">Our sicials</h3> */}
-              <div className="flex items-center justify-center uppercase gap-4 text-white flex-wrap w-full max-w-[300px]">
+              <div className="flex items-center justify-center uppercase gap-4 text-white flex-wrap w-full max-w-[300px] font-bold">
                 <Link
                   to={'home'}
                   className="cursor-pointer border-b-2 border-transparent hover:border-slate-600 hover:text-slate-600 transition ease-in-out duration-300"
