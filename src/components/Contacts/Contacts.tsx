@@ -101,7 +101,7 @@ export const Contacts: React.FC = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       }}
-      className="text-white bg-color_black-section2 h-[920px] max-my-600:h-[780px] pt-40 relative">
+      className="text-white bg-color_black-section2 h-[920px] max-my-600:h-[880px] pt-40 relative">
       <div className={styles.container}>
         {/* Animation for the title */}
         <motion.div

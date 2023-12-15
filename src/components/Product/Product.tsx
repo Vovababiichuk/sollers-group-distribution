@@ -49,7 +49,7 @@ export const Product: React.FC = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       }}
-      className="text-white h-[900px] pt-40 bg-color_black-section2">
+      className="text-white h-[900px] max-my-600:h-[820px] pt-40 max-my-600:pt-[94px] bg-color_black-section2">
       <div className={style.container}>
         <motion.div
           variants={fadeIn('up', 0.1)}
@@ -61,7 +61,7 @@ export const Product: React.FC = () => {
           </div>
         </motion.div>
 
-        <div className="flex items-center gap-[100px] max-my-600:gap-[0] mt-[-30px]">
+        <div className="flex items-center gap-[100px] max-my-600:gap-[0] mt-[-30px] max-my-600:justify-center">
           <motion.div
             variants={fadeIn('right', 0.2)}
             initial="hidden"

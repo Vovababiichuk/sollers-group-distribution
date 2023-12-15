@@ -3,7 +3,7 @@
 }
 
 .titleServices {
-	@apply text-5xl font-bold text-black text-center mb-[80px] mt-[-160px];
+	@apply text-5xl font-bold text-black text-center mb-[80px] mt-[-120px];
 
 	&::after {
 		content: '';
@@ -12,13 +12,13 @@
 		width: 190px;
 		height: 45px;
 		display: block;
-		margin-top: -24px;
-		margin-left: 620px;
+		margin-top: -23px;
+		margin-left: 150px;
 	}
 }
 
 .title {
-  @apply text-black font-bold text-[42px] capitalize text-white flex-1 mb-4 xl:mb-0 text-center xl:text-left
+  @apply text-black font-bold text-[42px] max-my-600:text-[36px] capitalize text-white flex-1 mb-4 xl:mb-0 text-center xl:text-left
 }
 
 .text {

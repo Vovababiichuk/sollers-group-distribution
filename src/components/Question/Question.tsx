@@ -26,7 +26,7 @@ export const Question: React.FC = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       }}
-      className="h-[900px] max-my-600:h-full max-my-600:max-h-[1300px] pt-40 relative">
+      className="h-[900px] max-my-600:h-full max-my-600:h-[1000px] pt-40 relative">
       <div className={styles.container}>
         <motion.div
           variants={fadeIn('up', 0.1)}

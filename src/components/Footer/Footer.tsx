@@ -14,7 +14,7 @@ export const Footer = () => {
       className={`h-[380px] max-my-600:h-full max-my-600:h-[400px] bg-[#0b0b19] bg-[#2f2e41] bg-primary ${styles.footer}`}>
       <div className={styles.container}>
         <div
-          className={`${styles.grid} max-my-600:flex max-my-600:flex-col max-my-600:mt-[-60px] max-my-600:py-20`}>
+          className={`${styles.grid} max-my-600:flex max-my-600:flex-col max-my-600:mt-[-60px] max-my-600:py-20 max-my-600:gap-5`}>
           {/* Left column */}
           <motion.div
             variants={fadeIn('right', 0.3)}
