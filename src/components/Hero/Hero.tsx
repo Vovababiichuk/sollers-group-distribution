@@ -51,13 +51,13 @@ export const Hero = () => {
               Effective Cyber Security Solutions to Protect Your Online World
             </p>
             <Link
-              to={'contact'}
+              to={'about'}
               className="cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300"
               activeClass="active"
               smooth
               spy
               offset={-50}>
-              <ButtonMain name="Contact Us" blackBtn={false} />
+              <ButtonMain name="About Us" blackBtn={false} />
             </Link>
           </motion.div>
         </div>

@@ -97,7 +97,7 @@ export const About: React.FC = () => {
                 variants={fadeIn('up', 0.3)}
                 initial="hidden"
                 whileInView={'show'}
-                viewport={{ once: false, amount: 0.3 }}>
+                viewport={{ once: false, amount: 0.2 }}>
                 <div className="pt-4">
                   <ButtonMain onClick={onOpen} name="Learn More" blackBtn={true} />
                 </div>

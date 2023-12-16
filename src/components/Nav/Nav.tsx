@@ -34,7 +34,7 @@ const links = [
 	},
 	{
 		path: 'contact',
-		name: 'Contact',
+		name: 'Contacts',
 		offset: -50
 	}
 ]
