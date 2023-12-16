@@ -2,7 +2,6 @@ import styles from './Question.module.scss';
 
 import { motion } from 'framer-motion';
 
-/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */
 import { fadeIn } from '../../../variants';
 
 import {

@@ -2,8 +2,7 @@
 import React, { useRef } from 'react';
 import { Input, Stack, Textarea } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-// @ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints
-import { fadeIn } from '../../../variants'; // Assuming this is a valid import
+import { fadeIn } from '../../../variants';
 import emailjs from '@emailjs/browser';
 
 import styles from './Contacts.module.scss';

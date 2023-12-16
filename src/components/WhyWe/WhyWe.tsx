@@ -5,7 +5,6 @@ import { BageCounter } from '../BageCounter/BageCounter';
 
 import { motion } from 'framer-motion';
 
-/*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */
 import { fadeIn } from '../../../variants';
 
 import { MdOutlineSupportAgent } from 'react-icons/md';

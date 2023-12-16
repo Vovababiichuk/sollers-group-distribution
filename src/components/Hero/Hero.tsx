@@ -4,7 +4,6 @@ import logo from '/images/logo/logo-blue3.svg';
 import { ButtonMain } from '../ButtonMain/ButtonMain';
 import { motion } from 'framer-motion';
 
-  /*@ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints */
 import { fadeIn } from '../../../variants';
 import { Link } from 'react-scroll';
 

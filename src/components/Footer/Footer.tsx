@@ -1,7 +1,6 @@
 import styles from './Footer.module.scss';
 import { motion } from 'framer-motion';
-// @ts-expect-error This line intentionally triggers a TypeScript error due to specific library constraints
-import { fadeIn } from '../../../variants'; // Assuming this is a valid import
+import { fadeIn } from '../../../variants';
 import { Link } from 'react-scroll';
 import logo from '/images/logo/logo-white2.svg';
 
@@ -79,10 +78,10 @@ export const Footer = () => {
 
           {/* Center column with logo */}
           <motion.div
-            variants={fadeIn('', 0.3)}
+            variants={fadeIn('up', 0.1)}
             initial="hidden"
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.3 }}>
+            viewport={{ once: false, amount: 0.1 }}>
             <div className={`${styles.centerColumn}`}>
               <img className={`${styles.logo} max-my-600:hidden`} src={logo} alt="logo" />
               {/* <span className="text-gray-500 absolute top-[270px] max-my-600:whitespace-nowrap">

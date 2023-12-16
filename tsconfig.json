@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "variants.js"],
+  "include": ["src", "variants.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
