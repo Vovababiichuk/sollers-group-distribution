@@ -34,7 +34,7 @@ export const WhyWe: React.FC = () => {
             <h2 className={styles.titleAbout}>Why Us?</h2>
           </div>
         </motion.div>
-        <div className="flex items-center justify-center gap-16 mt-[-10px] max-my-600:gap-1">
+        <div className="flex items-center justify-center gap-16 max-my-600:gap-1">
           <div className="flex flex-col gap-8 w-full max-w-xl">
             <motion.div
               variants={fadeIn('right', 0.2)}
@@ -66,7 +66,9 @@ export const WhyWe: React.FC = () => {
               </div>
             </motion.div>
 
+            {/* COUNTER */}
             <BageCounter />
+
           </div>
           <motion.div
             variants={fadeIn('left', 0.3)}
