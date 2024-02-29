@@ -4,8 +4,8 @@ import { fadeIn } from '../../../variants'
 import { Link } from 'react-scroll'
 import logo from '/images/logo/logo-white2.svg'
 
-import { Linkedin, Instagram } from 'lucide-react'
-import { PiTelegramLogoBold } from 'react-icons/pi'
+// import { Linkedin, Instagram } from 'lucide-react'
+// import { PiTelegramLogoBold } from 'react-icons/pi'
 
 export const Footer = () => {
 	return (
@@ -25,19 +25,29 @@ export const Footer = () => {
 					>
 						<div className={styles.column}>
 							<h3 className=' text-white text-center text-[24px] mb-6 font-bold'>
-								Our Partners
+								Our Solutions
 							</h3>
-							<ul className='flex flex-wrap justify-center gap-6 bg-[#71deff] bg-gradient-to-br from-blue-500 via-blue-300 to-blue-200 bg-red-300 p-6 rounded-[24px] hover:scale-105 duration-300 transition ease-in-out'>
+							<ul className='flex flex-wrap justify-center gap-6 bg-gradient-to-br from-blue-500 via-blue-300 to-blue-200 p-6 rounded-[24px] hover:scale-105 duration-300 transition ease-in-out'>
 								<li className='hover:scale-105 duration-300 transition ease-in-out mr-2'>
 									<a href='https://gttb.com/' target='_blank'>
 										<img
-											className='block w-[160px]'
+											className='block w-[180px]'
 											src='/images/partners/1.png'
-											alt=''
+											alt='logo'
 										/>
 									</a>
 								</li>
-								<li className='mb-3 hover:scale-105 duration-300 transition ease-in-out'>
+								<li className='hover:scale-105 duration-300 transition ease-in-out mr-2'>
+									<a href='https://gttb.com/' target='_blank'>
+										<img
+											className='block w-[180px]'
+											// src='/images/partners/product2.jpg'
+											src='/images/partners/prod2.png'
+											alt='logo'
+										/>
+									</a>
+								</li>
+								{/* <li className='mb-3 hover:scale-105 duration-300 transition ease-in-out'>
 									<a
 										href='https://www.cloudflare.com/lp/ppc/waf-x/?utm_source=google&utm_medium=cpc&utm_campaign=ao-fy-acq-emea_en_all-applications-as-ge-prospecting-sch_g_generic_beta&utm_content=Beta_Generic_Applications-Security_WAF&utm_term=firewall+for+website&campaignid=71700000112716322&adgroupid=58700008486001015&creativeid=662071359075&gclid=Cj0KCQiA7OqrBhD9ARIsAK3UXh3mTKQD8z1cH8AaIZ1EXViPNB_P0khc_xCMkLUYPUQxr6k2K7gFNScaAlZ6EALw_wcB&gclsrc=aw.ds'
 										target='_blank'
@@ -85,8 +95,8 @@ export const Footer = () => {
 											</defs>
 										</svg>
 									</a>
-								</li>
-								<li className='hover:scale-105 duration-300 transition ease-in-out'>
+								</li> */}
+								{/* <li className='hover:scale-105 duration-300 transition ease-in-out'>
 									<a href='https://gttb.com/' target='_blank'>
 										<img
 											className='block w-[160px]'
@@ -94,7 +104,7 @@ export const Footer = () => {
 											alt=''
 										/>
 									</a>
-								</li>
+								</li> */}
 							</ul>
 						</div>
 					</motion.div>
@@ -127,10 +137,10 @@ export const Footer = () => {
 					>
 						<div className={styles.column}>
 							{/* <h3 className="text-gray-500 text-center text-[24px] mb-6">Our sicials</h3> */}
-							<div className='flex items-center justify-center uppercase gap-4 text-white flex-wrap w-full max-w-[300px] font-bold'>
+							<div className='flex items-center justify-center uppercase gap-4 text-white flex-wrap w-full max-w-[310px] font-bold'>
 								<Link
 									to={'home'}
-									className='cursor-pointer border-b-2 border-transparent hover:border-slate-600 hover:text-slate-600 transition ease-in-out duration-300'
+									className='cursor-pointer hover:text-red-500 transition ease-in-out duration-300'
 									activeClass='active'
 									smooth
 									spy
@@ -139,7 +149,7 @@ export const Footer = () => {
 								</Link>
 								<Link
 									to={'about'}
-									className='cursor-pointer border-b-2 border-transparent hover:border-slate-600 hover:text-slate-600 transition ease-in-out duration-300'
+									className='cursor-pointer hover:text-red-500 transition ease-in-out duration-300'
 									activeClass='active'
 									smooth
 									spy
@@ -148,7 +158,7 @@ export const Footer = () => {
 								</Link>
 								<Link
 									to={'product'}
-									className='cursor-pointer border-b-2 border-transparent hover:border-slate-600 hover:text-slate-600 transition ease-in-out duration-300'
+									className='cursor-pointer hover:text-red-500 transition ease-in-out duration-300'
 									activeClass='active'
 									smooth
 									spy
@@ -157,16 +167,16 @@ export const Footer = () => {
 								</Link>
 								<Link
 									to={'services'}
-									className='cursor-pointer border-b-2 border-transparent hover:border-slate-600 hover:text-slate-600 transition ease-in-out duration-300'
+									className='cursor-pointer hover:text-red-500 transition ease-in-out duration-300'
 									activeClass='active'
 									smooth
 									spy
 								>
-									Services
+									Solutions
 								</Link>
 								<Link
 									to={'whywe'}
-									className='cursor-pointer border-b-2 border-transparent hover:border-slate-600 hover:text-slate-600 transition ease-in-out duration-300'
+									className='cursor-pointer hover:text-red-500 transition ease-in-out duration-300'
 									activeClass='active'
 									smooth
 									spy
@@ -175,7 +185,7 @@ export const Footer = () => {
 								</Link>
 								<Link
 									to={'question'}
-									className='cursor-pointer border-b-2 border-transparent hover:border-slate-600 hover:text-slate-600 transition ease-in-out duration-300'
+									className='cursor-pointer hover:text-red-500 transition ease-in-out duration-300'
 									activeClass='active'
 									smooth
 									spy
@@ -191,10 +201,10 @@ export const Footer = () => {
 								spy
                 offset={-50}
                 >Contact</Link> */}
-								<span className='hover:text-slate-600 hover:cursor-pointer hover:border-b-2 hover:border-slate-600'>
+								<span className='hover:cursor-pointer hover:text-red-500'>
 									Contact
 								</span>
-								<ul className='flex items-center gap-6'>
+								{/* <ul className='flex items-center gap-6'>
 									<li className='hover:scale-125 duration-300 transition ease-in-out  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-md'>
 										<a href='https://www.linkedin.com/' target='_blank'>
 											<Linkedin size={16} />
@@ -210,7 +220,7 @@ export const Footer = () => {
 											<PiTelegramLogoBold size={15} />
 										</a>
 									</li>
-								</ul>
+								</ul> */}
 							</div>
 						</div>
 					</motion.div>

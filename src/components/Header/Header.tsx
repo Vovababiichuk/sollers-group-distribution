@@ -1,5 +1,6 @@
-import { Instagram, Linkedin, PhoneCall } from 'lucide-react';
-import { PiTelegramLogoBold } from "react-icons/pi";
+// import { Instagram, Linkedin, PhoneCall } from 'lucide-react';
+import { Mail } from 'lucide-react';
+// import { PiTelegramLogoBold } from "react-icons/pi";
 import { Nav } from '../Nav/Nav';
 import styles from './Header.module.scss';
 import logo from '/images/logo/logo.png';
@@ -27,7 +28,7 @@ export const Header = () => {
           </div>
           {/* Social */}
           <div className="flex items-center gap-10 max-my-600:hidden">
-            <ul className="flex items-center gap-2">
+            {/* <ul className="flex items-center gap-2">
               <li className="hover:scale-125 duration-300 transition ease-in-out  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-1 rounded-md">
                 <a href="https://www.linkedin.com/" target="_blank">
                   <Linkedin size={14} />
@@ -43,12 +44,12 @@ export const Header = () => {
                   <PiTelegramLogoBold size={15} />
                 </a>
               </li>
-            </ul>
+            </ul> */}
             <div className={styles.phone}>
               <span>
-                <PhoneCall size={18} />
+                <Mail size={24} />
               </span>
-              <span>+38 (068) 025-31-47</span>
+              <span className='text-[18px]'>alex@slg-distribution.com</span>
             </div>
           </div>
         </div>

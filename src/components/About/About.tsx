@@ -110,25 +110,27 @@ export const About: React.FC = () => {
                       <div>
                         <ShieldCheck className="m-auto p-1" color="#32b4ff" size={40} />
                       </div>
-                      <div>About us more</div>
+                      <div>About us</div>
                     </div>
                   </ModalHeader>
                   <ModalCloseButton />
                   <ModalBody>
-                    <p className="mb-4 font-medium">
-                      With a focus on innovation and continuous improvement, we strive to stay ahead
-                      of emerging cyber threats. Our products are user-friendly, yet powerful,
-                      providing comprehensive protection without compromising performance. Whether
-                      you're an individual user or managing a complex network, our range of products
-                      offers scalable solutions to suit your specific needs.
-                    </p>
-                    <p className="mb-4 font-medium">
-                      With a focus on innovation and continuous improvement, we strive to stay ahead
-                      of emerging cyber threats. Our products are user-friendly, yet powerful,
-                      providing comprehensive protection without compromising performance. Whether
-                      you're an individual user or managing a complex network, our range of products
-                      offers scalable solutions to suit your specific needs.
-                    </p>
+                    <div className='bg-primary/10 p-3 rounded'>
+                      <p className="mb-4 font-medium">
+                        With a focus on innovation and continuous improvement, we strive to stay ahead
+                        of emerging cyber threats. Our products are user-friendly, yet powerful,
+                        providing comprehensive protection without compromising performance. Whether
+                        you're an individual user or managing a complex network, our range of products
+                        offers scalable solutions to suit your specific needs.
+                      </p>
+                      {/* <p className="mb-4 font-medium">
+                        With a focus on innovation and continuous improvement, we strive to stay ahead
+                        of emerging cyber threats. Our products are user-friendly, yet powerful,
+                        providing comprehensive protection without compromising performance. Whether
+                        you're an individual user or managing a complex network, our range of products
+                        offers scalable solutions to suit your specific needs.
+                      </p> */}
+                    </div>
                   </ModalBody>
 
                   <ModalFooter>

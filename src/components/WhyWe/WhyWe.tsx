@@ -22,7 +22,7 @@ export const WhyWe: React.FC = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       }}
-      className="text-white bg-color_black-section2 h-[900px] max-my-600:h-[980px] pt-36 relative">
+      className="text-white bg-color_black-section2 h-[830px] max-my-600:h-[980px] pt-36 relative">
       <div className={styles.container}>
         <motion.div
           variants={fadeIn('up', 0.1)}
