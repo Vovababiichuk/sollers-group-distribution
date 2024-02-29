@@ -1,7 +1,7 @@
 export const Mymodule = {
   apps: [
     {
-      name: 'sollers-group-tailwind',
+      name: 'next-portfolio-neon',
       script: 'node_modules/.bin/vite',
       args: 'build',
       instances: 1,
