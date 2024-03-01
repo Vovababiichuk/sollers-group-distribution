@@ -49,12 +49,12 @@ export const ServicesTwo = () => {
 						whileInView={'show'}
 						viewport={{ once: false, amount: 0.1 }}
 					>
-						<li className='bg-white shadow-lg shadow-primary/50 p-[36px] rounded-[10px] min-h-[320px] flex justify-between items-center'>
-							<div>
+						<li className='bg-white shadow-lg shadow-primary/50 p-[36px] rounded-[10px] min-h-[320px] flex justify-between items-center max-lg:justify-center'>
+							<div className='mr-10 max-lg:mr-0 max-lg:text-center'>
 								<h3 className='text-[28px] text-[#27468d] font-bold mb-[26px] uppercase'>
 									Data loss prevention
 								</h3>
-								<p className='text-[18px] text-black font-light leading-normal max-w-[560px] mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#27468d] to-[#2085c5] font-medium'>
+								<p className='text-[18px] text-black font-light leading-normal max-w-[560px] mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#27468d] to-[#2085c5] font-medium max-lg:text-center'>
 									Damage from leakage of various data and various information
 									can be in any field of activity. Journalists of print media
 									and television channels spend a lot of effort to be the first
@@ -67,7 +67,7 @@ export const ServicesTwo = () => {
 									competitors and requires reliable protection.
 								</p>
 							</div>
-							<div className='mb-[15px]'>
+							<div className='mb-[15px] max-lg:hidden'>
 								<img
 									src='/images/test1.png'
 									style={{ width: '500px' }}
@@ -83,12 +83,12 @@ export const ServicesTwo = () => {
 						whileInView={'show'}
 						viewport={{ once: false, amount: 0.1 }}
 					>
-						<li className='bg-white shadow-lg shadow-primary/50 p-[36px] rounded-[10px] min-h-[320px] flex justify-between items-center'>
-							<div>
+						<li className='bg-white shadow-lg shadow-primary/50 p-[36px] rounded-[10px] min-h-[320px] flex justify-between items-center max-lg:justify-center'>
+							<div className='mr-10 max-lg:mr-0 max-lg:text-center'>
 								<h3 className='text-[28px] text-[#27468d] font-bold mb-[26px] uppercase'>
 									Deception
 								</h3>
-								<p className='text-[18px] text-black font-light leading-normal max-w-[560px] mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#27468d] to-[#2085c5] font-medium'>
+								<p className='text-[18px] text-black font-light leading-normal max-w-[560px] mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#27468d] to-[#2085c5] font-medium max-lg:text-center'>
 									Effective systems for detecting intrusions and targeted
 									attacks in networks through the use of traps and lures.
 									Responding to threats in a timely manner will help protect
@@ -99,7 +99,7 @@ export const ServicesTwo = () => {
 									timely manner and provides reliable protection for your data.
 								</p>
 							</div>
-							<div className='mb-[15px]'>
+							<div className='mb-[15px] max-lg:hidden'>
 								<img
 									src='/images/deception.png'
 									style={{ width: '500px' }}
