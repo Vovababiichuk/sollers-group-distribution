@@ -20,3 +20,16 @@
 .shadow-box {
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
+
+.bgImages {
+	background-image: url('/images/decor-bg/wave-haikei-black2-product.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media (max-width: 600px){
+	.bgImages {
+		background-image: none;
+	}
+}

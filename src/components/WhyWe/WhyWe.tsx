@@ -1,28 +1,17 @@
 import { ScreenShare, ShieldCheck, UserCog } from 'lucide-react';
 import styles from './WhyWe.module.scss';
-
 import { BageCounter } from '../BageCounter/BageCounter';
-
 import { motion } from 'framer-motion';
-
 import { fadeIn } from '../../../variants';
-
 import { MdOutlineSupportAgent } from 'react-icons/md';
-
 // import bgSvg from '/images/decor-bg/wave-haikei-white3.svg';
-import bgSvg from '/images/decor-bg/wave-haikei-black2-product.svg';
+// import bgSvg from '/images/decor-bg/wave-haikei-black2-product.svg';
 
 export const WhyWe: React.FC = () => {
   return (
     <div
       id="whywe"
-      style={{
-        backgroundImage: `url(${bgSvg})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-      }}
-      className="text-white bg-color_black-section2 h-[830px] max-my-600:h-[980px] pt-36 relative">
+      className={`${styles.bgImages} text-white bg-color_black-section2 h-[830px] max-my-600:h-[1200px] pt-36 relative`}>
       <div className={styles.container}>
         <motion.div
           variants={fadeIn('up', 0.1)}
@@ -40,26 +29,26 @@ export const WhyWe: React.FC = () => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.3 }}>
-              <span className="text-primary font-bold uppercase mb-4 block">
+              <span className="text-primary font-bold uppercase mb-4 block max-my-600:text-center">
                 Premium Cyber Security Solutions
               </span>
-              <div className="flex gap-3 items-center ">
-                <MdOutlineSupportAgent size={32} style={{ marginBottom: '12px', color: '#fff' }} />
+              <div className="flex gap-3 items-center max-my-600:flex-col max-my-600:gap-0">
+                <MdOutlineSupportAgent size={44} style={{ marginBottom: '12px', color: '#fff' }} />
                 <span className="text-[24px] font-bold uppercase mb-4">Support 24/7</span>
               </div>
-              <div className="flex gap-2 items-center">
-                <ShieldCheck size={32} style={{ marginBottom: '14px' }} />
-                <span className="text-[24px] font-bold uppercase mb-4">
+              <div className="flex gap-2 items-center max-my-600:flex-col max-my-600:gap-0">
+                <ShieldCheck size={44} style={{ marginBottom: '14px' }} />
+                <span className="text-[24px] font-bold uppercase mb-4 max-my-600:text-center">
                   Highest Cyber Security Expertise
                 </span>
               </div>
-              <div className="flex gap-3 items-center">
-                <ScreenShare size={32} style={{ marginBottom: '10px' }} />
+              <div className="flex gap-3 items-center max-my-600:flex-col max-my-600:gap-0">
+                <ScreenShare size={42} style={{ marginBottom: '10px' }} />
                 <span className="text-[24px] font-bold uppercase mb-4">Quality Assurance</span>
               </div>
-              <div className="flex gap-3 items-center">
-                <UserCog size={32} />
-                <span className="text-[24px] font-bold uppercase">
+              <div className="flex gap-3 items-center max-my-600:flex-col">
+                <UserCog size={42} />
+                <span className="text-[24px] font-bold uppercase max-my-600:text-center">
                   Accessibility and Compliance
                 </span>
               </div>

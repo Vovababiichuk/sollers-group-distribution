@@ -3,7 +3,7 @@
 }
 
 .titleAbout {
-	@apply text-5xl font-bold text-white text-center mb-28 mt-[-280px] max-my-600:mt-[-630px];
+	@apply text-5xl font-bold text-white text-center mb-28 max-my-600:mb-12 mt-[-280px] max-my-600:mt-[-78px];
 
 	&::after {
 		content: '';
@@ -14,5 +14,18 @@
 		display: block;
 		margin-top: -24px;
 		margin-left: 90px;
+	}
+}
+
+.bgImages {
+	background-image: url('/images/decor-bg/wave-haikei-black2-product.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media (max-width: 600px){
+	.bgImages {
+		background-image: none;
 	}
 }

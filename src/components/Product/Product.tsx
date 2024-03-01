@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../../variants'
 
 // import bgSvg from '/images/decor-bg/wave-haikei-white3.svg';
-import bgSvg from '/images/decor-bg/wave-haikei-black2-product.svg'
+// import bgSvg from '/images/decor-bg/wave-haikei-black2-product.svg'
 
 import {
 	Modal,
@@ -42,13 +42,7 @@ export const Product: React.FC = () => {
 	return (
 		<div
 			id='product'
-			style={{
-				backgroundImage: `url(${bgSvg})`,
-				backgroundSize: 'cover',
-				backgroundRepeat: 'no-repeat',
-				backgroundPosition: 'center',
-			}}
-			className='text-white h-[900px] max-my-600:h-[1000px] pt-40 max-my-600:pt-[94px] bg-color_black-section2'
+			className={`${style.bgImages} text-white h-[900px] max-my-600:h-[920px] pt-40 max-my-600:pt-[94px] bg-color_black-section2`}
 		>
 			<div className={style.container}>
 				<motion.div

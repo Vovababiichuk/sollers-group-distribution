@@ -3,19 +3,13 @@ import { motion } from 'framer-motion'
 
 import { fadeIn } from '../../../variants'
 
-import bgSvg from '/images/decor-bg/wave-haikei-black2.svg'
+// import bgSvg from '/images/decor-bg/wave-haikei-black2.svg'
 
 export const ServicesTwo = () => {
 	return (
 		<div
 			id='services'
-			style={{
-				backgroundImage: `url(${bgSvg})`,
-				backgroundSize: 'cover',
-				backgroundRepeat: 'no-repeat',
-				backgroundPosition: 'center',
-			}}
-			className='h-[1700px] max-my-600:h-[2520px] pt-[160px] max-my-600:pt-[130px]'
+			className={`${styles.bgImages} h-[1700px] max-my-600:h-[2035px] pt-[160px] max-my-600:pt-[130px]`}
 		>
 			<motion.div
 				variants={fadeIn('up', 0.3)}
