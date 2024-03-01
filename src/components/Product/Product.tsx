@@ -58,7 +58,7 @@ export const Product: React.FC = () => {
 					viewport={{ once: false, amount: 0.3 }}
 				>
 					<div className='flex items-center justify-center'>
-						<h2 className={styles.titleProduct}>Our Solutions</h2>
+						<h2 className={styles.titleProduct}>Our Products</h2>
 					</div>
 				</motion.div>
 
