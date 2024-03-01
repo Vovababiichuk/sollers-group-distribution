@@ -1,5 +1,4 @@
 import './NavMobileMenu.module.scss'
-import { MdSecurity } from 'react-icons/md'
 // import { Link } from 'react-scroll'
 import logo from '../../../public/images/logo/logo-blue2.svg'
 
@@ -49,15 +48,12 @@ export const NavMobileMenu = ({ onClose }: { onClose?: () => void }) => {
 
 	return (
 		<nav className='flex flex-col gap-10 justify-center items-center'>
-			<ul className='flex max-my-600:flex-col gap-6 max-my-600:gap-4 max-my-600:text-[28px] uppercase items-start'>
+			<ul className='flex max-my-600:flex-col gap-6 max-my-600:gap-4 max-my-600:text-[28px] uppercase items-center'>
 				{links.map(link => {
 					return (
-						<li key={link.path} className='flex items-center gap-4'>
+						<li key={link.path}>
 							{/* <Link */}
 							{/* to={link.path} */}
-							<span>
-								<MdSecurity color='#32b4ff' />
-							</span>
 							<span>
 								<a
 									href={`#${link.path}`}
@@ -77,7 +73,7 @@ export const NavMobileMenu = ({ onClose }: { onClose?: () => void }) => {
 				})}
 			</ul>
 			<a href='/'>
-				<img className='w-44' src={logo} alt='logo' />
+				<img className='w-40' src={logo} alt='logo' />
 			</a>
 		</nav>
 	)
