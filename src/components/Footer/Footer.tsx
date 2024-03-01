@@ -27,7 +27,7 @@ export const Footer = () => {
 							<h3 className=' text-white text-center text-[24px] mb-6 font-bold'>
 								Our Solutions
 							</h3>
-							<ul className='flex flex-wrap justify-center gap-6 bg-gradient-to-br from-blue-500 via-blue-300 to-blue-200 p-6 rounded-[24px] hover:scale-105 duration-300 transition ease-in-out'>
+							<ul className='flex flex-wrap justify-center gap-6 bg-gradient-to-br from-blue-400 via-blue-300 to-blue-200 p-6 rounded-[24px] hover:scale-105 duration-300 transition ease-in-out'>
 								<li className='hover:scale-105 duration-300 transition ease-in-out mr-2'>
 									<a href='https://gttb.com/' target='_blank'>
 										<img

@@ -10,5 +10,11 @@
   @apply flex items-center gap-2 cursor-pointer hover:scale-105 duration-300 transition ease-in-out
 }
 
+.mail {
+  @apply text-[18px];
+
+  text-shadow: 0 0 10px #32b4ff, 0 0 20px #32b4ff;
+}
+
 
 

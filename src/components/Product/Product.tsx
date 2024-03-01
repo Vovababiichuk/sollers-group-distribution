@@ -91,7 +91,7 @@ export const Product: React.FC = () => {
 									onClick={() => setActiveTab(null)}
 								>
 									<img
-										className='block w-[130px]'
+										className='block w-[150px]'
 										src='/images/partners/1.png'
 										alt='logo'
 									/>
@@ -102,8 +102,8 @@ export const Product: React.FC = () => {
 									onClick={() => setActiveTab(null)}
 								>
 									<img
-										className='block w-[130px]'
-										src='/images/partners/product2.jpg'
+										className='block w-[150px] bg-white px-4 rounded-[10px]'
+										src='/images/partners/prod2.png'
 										alt='logo'
 									/>
 								</Tab>
@@ -159,7 +159,7 @@ export const Product: React.FC = () => {
 														<div className='flex flex-col gap-2'>
 															<div>
 																<img
-																	className='block w-[170px] bg-[#32b4ff] rounded-md py-1 px-3 text-center m-auto'
+																	className='block w-[170px] bg-[#32b4ff] rounded-md py-1 px-6 text-center m-auto'
 																	src='/images/partners/1.png'
 																	alt='logo'
 																/>
@@ -183,18 +183,18 @@ export const Product: React.FC = () => {
 												</ModalHeader>
 												<ModalCloseButton />
 												<ModalBody>
-													<div className='bg-primary/10 p-3 rounded'>
-														<p className='mb-4 font-medium'>
+													<div className='bg-primary/10 p-3 rounded-lg'>
+														<p className='mb-4'>
 															Features of DLP-system from GTB Technologies
 														</p>
-														<p className='mb-4 font-medium'>
+														<p className='mb-4'>
 															Any company that has valuable data sooner or later
 															decides to implement a DLP-system. Modern companies
 															offer a large number of options. According to the
 															method of finding the source of DLP-programs are
 															divided into three categories:
 														</p>
-														<p className='mb-4 font-medium'>
+														<p className='mb-4'>
 															data-in-use — in the process of using information;
 															data-in-motion — during the transfer of information
 															; data-at-rest — during the storage. The product GTB
@@ -205,13 +205,13 @@ export const Product: React.FC = () => {
 															Fingerprinting technology that protects huge
 															databases with a minimum of hash-prints.
 														</p>
-														<p className='mb-4 font-medium'>
+														<p className='mb-4'>
 															Unlike other companies' products, GTB provides full
 															visibility of data that is moved in cloud services.
 															The products also have the function of blocking
 															unauthorized access to the cloud.
 														</p>
-														<p className='mb-4 font-medium'>
+														<p className='mb-4'>
 															One of the key decisions of the company — GTB
 															Endpoint Agent. The product classifies data in real
 															time and provides real-time information about where
@@ -221,7 +221,7 @@ export const Product: React.FC = () => {
 															track all changes in documents and recognize users
 															who have access to them.
 														</p>
-														<p className='mb-4 font-medium'>
+														<p className='mb-4'>
 															Sollers is the official distributor of GTB
 															technologies, provides distribution and promotion of
 															solutions in CEE countires as well as professional
@@ -308,8 +308,8 @@ export const Product: React.FC = () => {
 												</ModalHeader>
 												<ModalCloseButton />
 												<ModalBody>
-													<div className='bg-primary/10 p-3 rounded'>
-														<p className='mb-4 font-medium'>
+													<div className='bg-neutral-100 p-3 rounded-lg'>
+														<p className='mb-4 text-gray-800'>
 															Based on unique threat detection technologies, this
 															Deception solution provides attackers with the
 															illusion of real vulnerabilities in the IT
@@ -320,7 +320,7 @@ export const Product: React.FC = () => {
 															encourages attackers to attack by monitoring and
 															studying their actions to improve security.
 														</p>
-														<p className='mb-4 font-medium'>
+														<p className='mb-4 text-gray-800'>
 															Sollers is the official distributor of Labyrinth,
 															provides distribution and promotion of solutions in
 															CEE countries, as well as professional support for

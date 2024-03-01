@@ -116,7 +116,7 @@ export const About: React.FC = () => {
                   <ModalCloseButton />
                   <ModalBody>
                     <div className='bg-primary/10 p-3 rounded'>
-                      <p className="mb-4 font-medium">
+                      <p className="mb-4">
                         With a focus on innovation and continuous improvement, we strive to stay ahead
                         of emerging cyber threats. Our products are user-friendly, yet powerful,
                         providing comprehensive protection without compromising performance. Whether

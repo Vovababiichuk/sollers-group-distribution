@@ -49,7 +49,7 @@ export const Header = () => {
               <span>
                 <Mail size={24} />
               </span>
-              <span className='text-[18px]'>alex@slg-distribution.com</span>
+              <span className={styles.mail}>alex@slg-distribution.com</span>
             </div>
           </div>
         </div>
