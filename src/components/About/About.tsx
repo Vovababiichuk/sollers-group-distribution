@@ -34,7 +34,7 @@ export const About: React.FC = () => {
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
         }}
-        className="text-black h-[900px] max-my-600:h-[1060px] pt-44 relative">
+        className="text-black h-[900px] max-my-600:h-[1115px] pt-44 relative">
         <div className={style.container}>
           <motion.div
             variants={fadeIn('up', 0.2)}
@@ -52,10 +52,10 @@ export const About: React.FC = () => {
                 initial="hidden"
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}>
-                <span className="text-primary font-bold uppercase mb-4 block">
+                <span className="text-primary font-bold uppercase mb-4 block max-my-600:text-center">
                   Premium Cyber Security Solutions
                 </span>
-                <h2 className="text-4xl font-bold">Ultimate Protection for Your Online World</h2>
+                <h2 className="text-4xl font-bold max-my-600:text-center">Ultimate Protection for Your Online World</h2>
               </motion.div>
               <motion.div
                 variants={fadeIn('up', 0.2)}
