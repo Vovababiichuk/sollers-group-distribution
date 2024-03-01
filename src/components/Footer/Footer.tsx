@@ -31,14 +31,14 @@ export const Footer = () => {
 								<li className='hover:scale-105 duration-300 transition ease-in-out mr-2'>
 									<a href='https://gttb.com/' target='_blank'>
 										<img
-											className='block w-[180px]'
+											className='block w-[190px]'
 											src='/images/partners/1.png'
 											alt='logo'
 										/>
 									</a>
 								</li>
 								<li className='hover:scale-105 duration-300 transition ease-in-out mr-2'>
-									<a href='https://gttb.com/' target='_blank'>
+									<a href='https://labyrinth.tech/' target='_blank'>
 										<img
 											className='block w-[180px]'
 											// src='/images/partners/product2.jpg'
