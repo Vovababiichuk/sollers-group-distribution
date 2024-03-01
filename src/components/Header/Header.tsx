@@ -5,6 +5,7 @@ import { Nav } from '../Nav/Nav';
 import styles from './Header.module.scss';
 import logo from '/images/logo/logo.png';
 import { MenuBtn } from '../MenuBtn/MenuBtn';
+import { Link } from 'react-scroll'
 
 export const Header = () => {
   return (
@@ -16,7 +17,9 @@ export const Header = () => {
             <img className={`${styles.logo} max-my-930:hidden`} src={logo} alt="logo" />
           </a>
           <div className="hidden max-my-600:block text-primary font-bold uppercase text-[26px]">
-            Sollers Group
+            <Link to="home" smooth>
+              Sollers Group
+            </Link>
           </div>
           {/* Nav */}
           <div className="max-my-600:hidden">

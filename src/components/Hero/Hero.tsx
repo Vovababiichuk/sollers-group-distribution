@@ -70,14 +70,14 @@ export const Hero = () => {
 						viewport={{ once: false, amount: 0.3 }}
 					>
 						<Link
-							to={'about'}
+							to={'product'}
 							className='cursor-pointer border-b-2 border-transparent hover:border-primary hover:text-primary transition ease-in-out duration-300'
 							activeClass='active'
 							smooth
 							spy
 							offset={-50}
 						>
-							<ButtonMain name='About Us' blackBtn={false} />
+							<ButtonMain name='Our Products' blackBtn={false} />
 						</Link>
 					</motion.div>
 				</div>
