@@ -62,7 +62,7 @@ export const About: React.FC = () => {
                 initial="hidden"
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}>
-                <div className="flex flex-col gap-3 text-[17px]">
+                <div className="flex flex-col gap-3 text-[18px]">
                   <div className="flex gap-3 items-center relative">
                     <span>
                       <ShieldCheck size={28} />

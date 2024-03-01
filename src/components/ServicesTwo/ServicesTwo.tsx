@@ -54,7 +54,7 @@ export const ServicesTwo = () => {
 								<h3 className='text-[28px] text-[#27468d] font-bold mb-[26px] uppercase'>
 									Data loss prevention
 								</h3>
-								<p className='text-[17px] text-black font-light leading-normal max-w-[560px] mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#27468d] to-[#2085c5] font-medium'>
+								<p className='text-[18px] text-black font-light leading-normal max-w-[560px] mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#27468d] to-[#2085c5] font-medium'>
 									Damage from leakage of various data and various information
 									can be in any field of activity. Journalists of print media
 									and television channels spend a lot of effort to be the first
@@ -88,7 +88,7 @@ export const ServicesTwo = () => {
 								<h3 className='text-[28px] text-[#27468d] font-bold mb-[26px] uppercase'>
 									Deception
 								</h3>
-								<p className='text-[17px] text-black font-light leading-normal max-w-[560px] mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#27468d] to-[#2085c5] font-medium'>
+								<p className='text-[18px] text-black font-light leading-normal max-w-[560px] mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#27468d] to-[#2085c5] font-medium'>
 									Effective systems for detecting intrusions and targeted
 									attacks in networks through the use of traps and lures.
 									Responding to threats in a timely manner will help protect

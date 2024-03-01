@@ -47,7 +47,7 @@ export const Header = () => {
             </ul> */}
             <div className={styles.phone}>
               <span>
-                <Mail size={24} />
+                <Mail color='#32b4ff' size={21} />
               </span>
               <span className={styles.mail}>alex@slg-distribution.com</span>
             </div>

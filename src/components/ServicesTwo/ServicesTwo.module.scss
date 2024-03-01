@@ -18,7 +18,7 @@
 }
 
 .title {
-  @apply text-black font-bold text-[40px] max-my-600:text-[36px] capitalize text-white flex-1 mb-4 xl:mb-0 text-center xl:text-center px-2
+  @apply text-black font-bold text-[40px] max-my-600:text-[36px] capitalize text-white flex-1 mb-4 xl:mb-0 text-center xl:text-center max-w-[1100px] m-auto
 }
 
 .text {
