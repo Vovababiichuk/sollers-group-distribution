@@ -13,19 +13,13 @@ import {
 	Box,
 } from '@chakra-ui/react'
 
-import bgSvg from '/images/decor-bg/wave-haikei-black2.svg'
+// import bgSvg from '/images/decor-bg/wave-haikei-black2.svg'
 
 export const Question: React.FC = () => {
 	return (
 		<div
 			id='question'
-			style={{
-				backgroundImage: `url(${bgSvg})`,
-				backgroundSize: 'cover',
-				backgroundRepeat: 'no-repeat',
-				backgroundPosition: 'center',
-			}}
-			className='h-[900px] max-my-600:h-full max-my-600:h-[1000px] pt-40 relative'
+			className={`${styles.bgImages} h-[900px] max-my-600:h-full pt-40 relative`}
 		>
 			<div className={styles.container}>
 				<motion.div
