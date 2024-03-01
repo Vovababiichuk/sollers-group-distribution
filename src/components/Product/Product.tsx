@@ -58,7 +58,7 @@ export const Product: React.FC = () => {
 					viewport={{ once: false, amount: 0.3 }}
 				>
 					<div className='flex items-center justify-center'>
-						<h2 className={styles.titleProduct}>Our Products</h2>
+						<h2 className={styles.titleProduct}>Our Solutions</h2>
 					</div>
 				</motion.div>
 
@@ -159,23 +159,27 @@ export const Product: React.FC = () => {
 														<div className='flex flex-col gap-2'>
 															<div>
 																<img
-																	className='block w-[170px] bg-[#32b4ff] rounded-md py-1 px-6 text-center m-auto'
+																	className='block w-[170px] bg-[#32b4ff] rounded-md py-1 px-6 text-center m-auto mb-1'
 																	src='/images/partners/1.png'
 																	alt='logo'
 																/>
 															</div>
 															<div>
 																<a
-																	className='text-[16px] text-center hover:text-red-400 underline transition duration-200 ease-in-out'
+																	className='flex items-center text-[18px] text-center hover:text-red-400 underline transition duration-200 ease-in-out'
 																	href='https://www.youtube.com/watch?v=qhTExUcjqfY'
 																	target='_blank'
 																>
-																	<Youtube
-																		size={30}
-																		className='inline-block mr-2'
-																	/>
-																	GTB TECHNOLOGIES: A NEW APPROACH TO PREVENTING
-																	DATA LOSS
+																	<span>
+																		<Youtube
+																			size={32}
+																			className='inline-block mr-2'
+																		/>
+																	</span>
+																	<span>
+																		GTB TECHNOLOGIES: A NEW APPROACH TO PREVENTING
+																		DATA LOSS
+																	</span>
 																</a>
 															</div>
 														</div>
@@ -183,7 +187,7 @@ export const Product: React.FC = () => {
 												</ModalHeader>
 												<ModalCloseButton />
 												<ModalBody>
-													<div className='bg-primary/10 p-3 rounded-lg'>
+													<div className='p-3 rounded-lg bg-primary text-white font-medium text-[17px] shadow-lg shadow-black/20'>
 														<p className='mb-4'>
 															Features of DLP-system from GTB Technologies
 														</p>
@@ -292,15 +296,17 @@ export const Product: React.FC = () => {
 															</div>
 															<div>
 																<a
-																	className='text-[16px] text-center hover:text-red-400 underline transition duration-200 ease-in-out'
+																	className='flex items-center text-[18px] text-center hover:text-red-400 underline transition duration-200 ease-in-out'
 																	href='https://www.youtube.com/watch?v=NA9A3dIbKws'
 																	target='_blank'
 																>
 																	<Youtube
-																		size={30}
+																		size={32}
 																		className='inline-block mr-2'
 																	/>
-																	HOW TO EXPAND LABYRINTH DECEPTION PLATFORM
+																	<span>
+																		HOW TO EXPAND LABYRINTH DECEPTION PLATFORM
+																	</span>
 																</a>
 															</div>
 														</div>
@@ -308,8 +314,8 @@ export const Product: React.FC = () => {
 												</ModalHeader>
 												<ModalCloseButton />
 												<ModalBody>
-													<div className='bg-neutral-100 p-3 rounded-lg'>
-														<p className='mb-4 text-gray-800'>
+													<div className='p-3 rounded-lg bg-primary text-white font-medium text-[17px] shadow-lg shadow-black/20'>
+														<p className='mb-4'>
 															Based on unique threat detection technologies, this
 															Deception solution provides attackers with the
 															illusion of real vulnerabilities in the IT
@@ -320,7 +326,7 @@ export const Product: React.FC = () => {
 															encourages attackers to attack by monitoring and
 															studying their actions to improve security.
 														</p>
-														<p className='mb-4 text-gray-800'>
+														<p className='mb-4'>
 															Sollers is the official distributor of Labyrinth,
 															provides distribution and promotion of solutions in
 															CEE countries, as well as professional support for
