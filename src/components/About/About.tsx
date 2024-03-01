@@ -19,7 +19,7 @@ import {
 import { Button as ChakraButton } from '@chakra-ui/react';
 import { useDisclosure } from '@chakra-ui/react';
 
-import bgSvg from '/images/decor-bg/wave-haikei-black2.svg';
+// import bgSvg from '/images/decor-bg/wave-haikei-black2.svg';
 
 export const About: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -28,13 +28,7 @@ export const About: React.FC = () => {
     <>
       <div
         id="about"
-        style={{
-          backgroundImage: `url(${bgSvg})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-        }}
-        className="text-black h-[900px] max-my-600:h-[1115px] pt-44 relative">
+        className={`${style.bgImages} text-black h-[900px] max-my-600:h-[850px] pt-44 relative`}>
         <div className={style.container}>
           <motion.div
             variants={fadeIn('up', 0.2)}

@@ -3,7 +3,7 @@
 }
 
 .titleProduct {
-	@apply text-5xl font-bold text-white text-center mb-24 mt-[-100px];
+	@apply text-5xl font-bold text-white text-center mb-24 mt-[-100px] max-my-600:mt-[-20px];
 
 	&::after {
 		content: '';

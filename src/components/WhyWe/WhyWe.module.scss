@@ -3,7 +3,7 @@
 }
 
 .titleAbout {
-	@apply text-5xl font-bold text-white text-center mb-28 mt-[-280px];
+	@apply text-5xl font-bold text-white text-center mb-28 mt-[-280px] max-my-600:mt-[-630px];
 
 	&::after {
 		content: '';

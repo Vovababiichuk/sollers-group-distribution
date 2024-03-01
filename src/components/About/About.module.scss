@@ -16,3 +16,16 @@
 		margin-left: 90px;
 	}
 }
+
+.bgImages {
+	background-image: url('/images/decor-bg/wave-haikei-black2.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media (max-width: 600px){
+	.bgImages {
+		background-image: none;
+	}
+}
