@@ -14,7 +14,7 @@ export const Footer = () => {
 		>
 			<div className={styles.container}>
 				<div
-					className={`${styles.grid} mt-[-20px] max-my-600:flex max-my-600:flex-col max-my-600:mt-[-30px] max-my-600:py-20 max-my-600:gap-5`}
+					className={`${styles.grid} mt-[-20px] max-my-600:flex max-my-600:flex-col max-my-600:mt-[-30px] max-my-600:pt-20 max-my-600:pb-12  max-my-600:gap-5`}
 				>
 					{/* Left column */}
 					<motion.div
