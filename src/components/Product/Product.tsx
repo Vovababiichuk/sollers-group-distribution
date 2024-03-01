@@ -48,7 +48,7 @@ export const Product: React.FC = () => {
 				backgroundRepeat: 'no-repeat',
 				backgroundPosition: 'center',
 			}}
-			className='text-white h-[900px] max-my-600:h-[820px] pt-40 max-my-600:pt-[94px] bg-color_black-section2'
+			className='text-white h-[900px] max-my-600:h-[1000px] pt-40 max-my-600:pt-[94px] bg-color_black-section2'
 		>
 			<div className={style.container}>
 				<motion.div
@@ -125,7 +125,7 @@ export const Product: React.FC = () => {
 											GTB DLP — best rated by Gartner customer review DLP
 											solution
 										</h2>
-										<p className='text-white h-[123px] text-[18px] overflow-hidden'>
+										<p className='text-white h-[123px] max-my-600:h-[250px] text-[18px] overflow-hidden'>
 											<a href="https://www.youtube.com/watch?v=qhTExUcjqfY" target="_blank" className='text-[#32b4ff] underline hover:text-red-400 transition ease-in-out duration-200 uppercase'>GTB Technologies</a> — is an American company that offers
 											innovative solutions in the field of data loss prevention
 											(Loss Prevention - DLP). Founded in 2004, GTB Technologies
@@ -256,7 +256,7 @@ export const Product: React.FC = () => {
 											Best product for detecting targeted attacks (APTs),
 											botnets, "zero-day" attacks and insiders
 										</h2>
-										<p className='text-white h-[123px] text-[18px] overflow-hidden'>
+										<p className='text-white h-[123px] max-my-600:h-[200px] text-[18px] overflow-hidden'>
 											<a href="https://www.youtube.com/watch?v=NA9A3dIbKws" target="_blank" className='text-[#32b4ff] underline hover:text-red-400 transition duration-200 ease-in-out uppercase'>Labyrinth</a> — is a European team of cybersecurity engineers
 											and pentesters that specializes in developing solutions
 											for the early detection and prevention of cyber threats.

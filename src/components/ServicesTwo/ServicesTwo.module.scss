@@ -3,7 +3,7 @@
 }
 
 .titleServices {
-	@apply text-5xl font-bold text-black text-center mb-[80px] mt-[-120px];
+	@apply text-5xl font-bold text-black text-center mb-[80px] mt-[-120px] max-my-600:mb-[628px];
 
 	&::after {
 		content: '';

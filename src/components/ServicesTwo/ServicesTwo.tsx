@@ -15,7 +15,7 @@ export const ServicesTwo = () => {
 				backgroundRepeat: 'no-repeat',
 				backgroundPosition: 'center',
 			}}
-			className='h-[1700px] max-my-600:h-[3320px] pt-[160px] max-my-600:pt-[120px]'
+			className='h-[1700px] max-my-600:h-[2520px] pt-[160px] max-my-600:pt-[130px]'
 		>
 			<motion.div
 				variants={fadeIn('up', 0.3)}
