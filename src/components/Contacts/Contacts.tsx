@@ -13,7 +13,7 @@ import { MailCheck, MailWarning } from 'lucide-react';
 import { ButtonMain } from '../ButtonMain/ButtonMain';
 
 // import bgSvg from '/images/decor-bg/wave-haikei-primary.svg';
-import bgSvg from '/images/decor-bg/wave-haikei-primary2.svg';
+// import bgSvg from '/images/decor-bg/wave-haikei-primary2.svg';
 
 interface FormData {
   name: string;
@@ -89,18 +89,12 @@ export const Contacts: React.FC = () => {
         clearTimeout(showMessageTimeout);
       }
     };
-  }, [isSuccess]);
+  }, [isSuccess, showMessageTimeout]);
 
   return (
     <div
       id="contact"
-      style={{
-        backgroundImage: `url(${bgSvg})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-      }}
-      className="text-white bg-color_black-section2 h-[920px] max-my-600:h-[880px] pt-40 relative">
+      className={`${styles.bgImages} text-white bg-color_black-section2 h-[920px] max-my-600:h-[800px] pt-40 relative`}>
       <div className={styles.container}>
         {/* Animation for the title */}
         <motion.div
@@ -242,7 +236,7 @@ export const Contacts: React.FC = () => {
                     )}
                   </div>
                   {/* Button */}
-                  <div className="m-auto">
+                  <div className="m-auto mt-[10px] max-my-600:mt-[20px]">
                     <ButtonMain name="Send Message" blackBtn />
                   </div>
                   {/* Success or error */}

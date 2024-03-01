@@ -14,7 +14,7 @@ export const Footer = () => {
 		>
 			<div className={styles.container}>
 				<div
-					className={`${styles.grid} mt-[-20px] max-my-600:flex max-my-600:flex-col max-my-600:mt-[-60px] max-my-600:py-20 max-my-600:gap-5`}
+					className={`${styles.grid} mt-[-20px] max-my-600:flex max-my-600:flex-col max-my-600:mt-[-30px] max-my-600:py-20 max-my-600:gap-5`}
 				>
 					{/* Left column */}
 					<motion.div
@@ -24,7 +24,7 @@ export const Footer = () => {
 						viewport={{ once: false, amount: 0.3 }}
 					>
 						<div className={styles.column}>
-							<h3 className=' text-white text-center text-[24px] mb-6 font-bold'>
+							<h3 className=' text-white text-center text-[24px] mb-6 font-bold max-my-600:hidden'>
 								Our Solutions
 							</h3>
 							<ul className='flex flex-wrap justify-center gap-6 bg-gradient-to-br from-blue-400 via-blue-300 to-blue-100 p-6 rounded-[24px] hover:scale-105 duration-300 transition ease-in-out shadow-lg shadow-blue-500/50'>
