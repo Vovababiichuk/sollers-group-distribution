@@ -63,7 +63,7 @@ export const WhyWe: React.FC = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
-            <div className="w-[470px] mt-[-30px] max-my-600:hidden">
+            <div className="w-[470px] mt-[-30px] max-md:hidden">
               {/* <img src="/images/reduce.svg" alt="logo" width={'550px'} /> */}
               <img src="/images/3d-img/Endpoint-bro.svg" alt="logo" width={'550px'} />
             </div>

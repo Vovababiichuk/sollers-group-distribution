@@ -269,7 +269,7 @@ export const Contacts: React.FC = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}>
-            <div className="w-[500px] max-my-600:hidden">
+            <div className="w-[500px] max-md:hidden">
               {/* <img src="/images/cards-img/51.svg" alt="logo" width={'550px'} /> */}
               <img src="/images/3d-img/email-amico.svg" alt="logo" width={'550px'} />
             </div>

@@ -169,7 +169,7 @@ export const Question: React.FC = () => {
 						whileInView={'show'}
 						viewport={{ once: false, amount: 0.3 }}
 					>
-						<div className='w-[500px] max-my-600:hidden'>
+						<div className='w-[500px] max-md:hidden'>
 							{/* <img src="/images/questions.svg" alt="logo" /> */}
 							<img src='/images/3d-img/faq.svg' alt='logo' />
 						</div>

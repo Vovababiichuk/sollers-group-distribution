@@ -63,7 +63,7 @@ export const Product: React.FC = () => {
 						whileInView={'show'}
 						viewport={{ once: false, amount: 0.3 }}
 					>
-						<div className='w-[500px] mt-[-20px] max-my-600:hidden'>
+						<div className='w-[500px] mt-[-20px] max-md:hidden'>
 							{/* <img src="/images/secure_login.svg" alt="logo" /> */}
 							{/* <img src="/images/3d-img/secure-data-bro.svg" alt="logo" /> */}
 							{/* <img src="/images/3d-img/cyber-attack.svg" alt="logo" /> */}
